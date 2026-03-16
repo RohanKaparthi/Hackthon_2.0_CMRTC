@@ -1,0 +1,501 @@
+schedule_id,doctor_id,doctor_name,specialization,hospital_id,hospital_name,area,district,hospital_type,total_beds,available_beds,icu_beds,date,shift_type,start_time,end_time,availability_status,patient_id,age,gender,disease_type,severity_level,arrival_time,assigned_doctor_id,waiting_time_minutes
+S0001,D016,Doctor_D016,Orthopedics,H029,Hospital_29,Area_9,District_1,Rural Center,68,26,6,2026-03-07,Night,20:00,08:00,Available,P00001,40,Male,Heart Disease,Medium,13:05,D016,81
+S0002,D041,Doctor_D041,Neurology,H020,Hospital_20,Area_25,District_4,Rural Center,285,145,19,2026-03-05,Evening,14:00,20:00,Available,P00002,72,Male,Ear Infection,Low,17:38,D041,150
+S0003,D118,Doctor_D118,General Medicine,H017,Hospital_17,Area_17,District_7,Private,175,192,6,2026-03-13,Morning,08:00,14:00,Available,P00003,45,Male,Infection,Critical,16:41,D118,177
+S0004,D111,Doctor_D111,ENT,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-04,Night,20:00,08:00,Emergency Duty,P00004,50,Female,Pregnancy,Medium,11:18,D111,9
+S0005,D084,Doctor_D084,Neurology,H006,Hospital_6,Area_21,District_9,Government,290,102,18,2026-03-01,Night,20:00,08:00,Available,P00005,26,Female,Ear Infection,Low,14:51,D084,91
+S0006,D110,Doctor_D110,Cardiology,H024,Hospital_24,Area_14,District_1,Private,272,98,40,2026-03-13,Morning,08:00,14:00,Emergency Duty,P00006,45,Female,Pregnancy,Low,12:32,D110,21
+S0007,D011,Doctor_D011,Orthopedics,H016,Hospital_16,Area_3,District_8,Rural Center,180,32,15,2026-03-06,Morning,08:00,14:00,Emergency Duty,P00007,28,Female,Diabetes,Critical,10:16,D011,134
+S0008,D066,Doctor_D066,Dermatology,H018,Hospital_18,Area_16,District_1,Private,230,162,30,2026-03-04,Evening,14:00,20:00,Leave,P00008,31,Female,Fracture,Critical,13:46,D066,146
+S0009,D027,Doctor_D027,Gynecology,H002,Hospital_2,Area_25,District_8,Private,216,102,18,2026-03-03,Evening,14:00,20:00,Leave,P00009,19,Male,Diabetes,Low,08:40,D027,162
+S0010,D097,Doctor_D097,Radiology,H018,Hospital_18,Area_16,District_1,Private,230,162,30,2026-03-08,Morning,08:00,14:00,Emergency Duty,P00010,11,Female,Diabetes,Medium,17:44,D097,149
+S0011,D137,Doctor_D137,Neurology,H005,Hospital_5,Area_19,District_2,Private,57,10,6,2026-03-04,Morning,08:00,14:00,Available,P00011,38,Male,Ear Infection,Critical,15:48,D137,8
+S0012,D024,Doctor_D024,General Medicine,H034,Hospital_34,Area_16,District_2,Government,129,103,26,2026-03-07,Evening,14:00,20:00,Available,P00012,76,Female,Fracture,Low,09:57,D024,120
+S0013,D043,Doctor_D043,Orthopedics,H019,Hospital_19,Area_21,District_3,Government,178,63,5,2026-03-04,Night,20:00,08:00,Leave,P00013,49,Female,Pregnancy,Medium,12:07,D043,127
+S0014,D081,Doctor_D081,Dermatology,H003,Hospital_3,Area_4,District_8,Government,278,104,32,2026-03-02,Morning,08:00,14:00,Available,P00014,2,Female,Ear Infection,Medium,11:32,D081,120
+S0015,D101,Doctor_D101,Cardiology,H005,Hospital_5,Area_19,District_2,Private,57,10,6,2026-03-03,Evening,14:00,20:00,Leave,P00015,77,Female,Heart Disease,Medium,14:48,D101,60
+S0016,D139,Doctor_D139,Dermatology,H015,Hospital_15,Area_22,District_3,Private,190,184,28,2026-03-09,Night,20:00,08:00,Available,P00016,70,Male,Asthma,Low,16:00,D139,68
+S0017,D093,Doctor_D093,Cardiology,H022,Hospital_22,Area_15,District_5,Rural Center,190,160,5,2026-03-15,Morning,08:00,14:00,Available,P00017,84,Female,Infection,Medium,12:47,D093,83
+S0018,D011,Doctor_D011,Dermatology,H037,Hospital_37,Area_1,District_7,Government,59,189,15,2026-03-19,Evening,14:00,20:00,Leave,P00018,32,Female,Heart Disease,Critical,11:11,D011,161
+S0019,D149,Doctor_D149,Pediatrics,H026,Hospital_26,Area_12,District_1,Rural Center,188,164,26,2026-03-08,Night,20:00,08:00,Available,P00019,32,Female,Heart Disease,Medium,09:34,D149,146
+S0020,D019,Doctor_D019,General Medicine,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-21,Night,20:00,08:00,Available,P00020,38,Female,Migraine,Medium,09:16,D019,44
+S0021,D026,Doctor_D026,Cardiology,H014,Hospital_14,Area_16,District_4,Rural Center,254,108,31,2026-03-17,Night,20:00,08:00,Emergency Duty,P00021,23,Male,Fracture,Low,13:35,D026,86
+S0022,D079,Doctor_D079,Emergency,H038,Hospital_38,Area_15,District_9,Rural Center,159,144,19,2026-03-10,Morning,08:00,14:00,Available,P00022,27,Male,Pregnancy,Critical,16:46,D079,13
+S0023,D081,Doctor_D081,Pediatrics,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-06,Night,20:00,08:00,Leave,P00023,56,Male,Fever,Critical,17:26,D081,175
+S0024,D064,Doctor_D064,ENT,H033,Hospital_33,Area_21,District_5,Private,229,87,36,2026-03-14,Evening,14:00,20:00,Emergency Duty,P00024,33,Female,Pregnancy,Medium,09:05,D064,7
+S0025,D102,Doctor_D102,Neurology,H023,Hospital_23,Area_13,District_9,Government,182,148,18,2026-03-16,Evening,14:00,20:00,Available,P00025,83,Female,Ear Infection,Low,10:55,D102,20
+S0026,D091,Doctor_D091,Emergency,H026,Hospital_26,Area_12,District_1,Rural Center,188,164,26,2026-03-05,Night,20:00,08:00,Available,P00026,34,Female,Skin Allergy,Critical,10:21,D091,107
+S0027,D045,Doctor_D045,Pediatrics,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-16,Night,20:00,08:00,Available,P00027,23,Female,Pregnancy,Critical,09:31,D045,117
+S0028,D058,Doctor_D058,ENT,H015,Hospital_15,Area_22,District_3,Private,190,184,28,2026-03-16,Morning,08:00,14:00,Available,P00028,53,Female,Pregnancy,Critical,13:20,D058,172
+S0029,D071,Doctor_D071,General Medicine,H010,Hospital_10,Area_18,District_2,Government,211,190,23,2026-03-03,Night,20:00,08:00,Emergency Duty,P00029,83,Female,Fracture,Critical,11:44,D071,57
+S0030,D080,Doctor_D080,Radiology,H023,Hospital_23,Area_13,District_9,Government,182,148,18,2026-03-12,Evening,14:00,20:00,Available,P00030,90,Female,Ear Infection,Low,13:06,D080,36
+S0031,D132,Doctor_D132,Orthopedics,H026,Hospital_26,Area_12,District_1,Rural Center,188,164,26,2026-03-05,Night,20:00,08:00,Leave,P00031,55,Male,Ear Infection,Critical,14:26,D132,18
+S0032,D127,Doctor_D127,Dermatology,H029,Hospital_29,Area_9,District_1,Rural Center,68,26,6,2026-03-13,Night,20:00,08:00,Emergency Duty,P00032,22,Male,Pregnancy,Low,14:43,D127,70
+S0033,D026,Doctor_D026,Orthopedics,H038,Hospital_38,Area_15,District_9,Rural Center,159,144,19,2026-03-20,Evening,14:00,20:00,Emergency Duty,P00033,88,Male,Migraine,Low,09:25,D026,102
+S0034,D111,Doctor_D111,Dermatology,H024,Hospital_24,Area_14,District_1,Private,272,98,40,2026-03-15,Evening,14:00,20:00,Available,P00034,80,Female,Infection,Low,10:48,D111,115
+S0035,D137,Doctor_D137,Neurology,H028,Hospital_28,Area_18,District_10,Government,270,28,40,2026-03-09,Evening,14:00,20:00,Available,P00035,49,Male,Infection,Critical,10:00,D137,117
+S0036,D149,Doctor_D149,Emergency,H003,Hospital_3,Area_4,District_8,Government,278,104,32,2026-03-08,Morning,08:00,14:00,Leave,P00036,27,Male,Asthma,Low,08:31,D149,143
+S0037,D052,Doctor_D052,Emergency,H031,Hospital_31,Area_20,District_3,Private,124,22,15,2026-03-09,Evening,14:00,20:00,Emergency Duty,P00037,58,Male,Pregnancy,Medium,13:18,D052,130
+S0038,D108,Doctor_D108,Emergency,H032,Hospital_32,Area_6,District_5,Rural Center,293,48,22,2026-03-13,Morning,08:00,14:00,Available,P00038,37,Male,Fever,Low,11:33,D108,150
+S0039,D004,Doctor_D004,Orthopedics,H028,Hospital_28,Area_18,District_10,Government,270,28,40,2026-03-03,Night,20:00,08:00,Emergency Duty,P00039,48,Female,Skin Allergy,Critical,13:03,D004,178
+S0040,D092,Doctor_D092,General Medicine,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-04,Night,20:00,08:00,Leave,P00040,58,Female,Asthma,Critical,13:31,D092,107
+S0041,D087,Doctor_D087,ENT,H015,Hospital_15,Area_22,District_3,Private,190,184,28,2026-03-04,Night,20:00,08:00,Emergency Duty,P00041,49,Female,Infection,Critical,17:45,D087,5
+S0042,D072,Doctor_D072,Pediatrics,H012,Hospital_12,Area_14,District_9,Rural Center,98,82,23,2026-03-15,Night,20:00,08:00,Emergency Duty,P00042,67,Female,Asthma,Critical,16:43,D072,48
+S0043,D116,Doctor_D116,Pediatrics,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-12,Night,20:00,08:00,Emergency Duty,P00043,1,Female,Ear Infection,Medium,17:03,D116,108
+S0044,D087,Doctor_D087,Cardiology,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-16,Night,20:00,08:00,Emergency Duty,P00044,32,Female,Fever,Medium,17:58,D087,166
+S0045,D040,Doctor_D040,Neurology,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-06,Night,20:00,08:00,Available,P00045,78,Male,Diabetes,Medium,14:46,D040,110
+S0046,D140,Doctor_D140,ENT,H005,Hospital_5,Area_19,District_2,Private,57,10,6,2026-03-09,Evening,14:00,20:00,Leave,P00046,22,Female,Pregnancy,Low,10:35,D140,74
+S0047,D131,Doctor_D131,Cardiology,H015,Hospital_15,Area_22,District_3,Private,190,184,28,2026-03-12,Morning,08:00,14:00,Available,P00047,85,Female,Fever,Low,15:12,D131,134
+S0048,D042,Doctor_D042,Gynecology,H003,Hospital_3,Area_4,District_8,Government,278,104,32,2026-03-21,Night,20:00,08:00,Emergency Duty,P00048,36,Female,Infection,Critical,09:35,D042,58
+S0049,D061,Doctor_D061,Cardiology,H031,Hospital_31,Area_20,District_3,Private,124,22,15,2026-03-03,Evening,14:00,20:00,Emergency Duty,P00049,67,Female,Migraine,Critical,12:35,D061,147
+S0050,D013,Doctor_D013,Radiology,H004,Hospital_4,Area_20,District_1,Rural Center,164,73,19,2026-03-09,Morning,08:00,14:00,Leave,P00050,79,Male,Skin Allergy,Critical,13:04,D013,107
+S0051,D045,Doctor_D045,Emergency,H015,Hospital_15,Area_22,District_3,Private,190,184,28,2026-03-11,Evening,14:00,20:00,Emergency Duty,P00051,29,Female,Ear Infection,Critical,12:25,D045,67
+S0052,D008,Doctor_D008,Dermatology,H002,Hospital_2,Area_25,District_8,Private,216,102,18,2026-03-14,Night,20:00,08:00,Available,P00052,35,Male,Heart Disease,Critical,14:52,D008,47
+S0053,D149,Doctor_D149,Orthopedics,H030,Hospital_30,Area_15,District_1,Private,113,73,12,2026-03-20,Evening,14:00,20:00,Leave,P00053,59,Male,Fracture,Low,17:55,D149,117
+S0054,D093,Doctor_D093,Pediatrics,H001,Hospital_1,Area_5,District_10,Government,115,35,36,2026-03-04,Evening,14:00,20:00,Emergency Duty,P00054,27,Female,Heart Disease,Low,14:50,D093,63
+S0055,D102,Doctor_D102,Cardiology,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-06,Evening,14:00,20:00,Available,P00055,8,Male,Infection,Critical,16:24,D102,13
+S0056,D127,Doctor_D127,Emergency,H012,Hospital_12,Area_14,District_9,Rural Center,98,82,23,2026-03-15,Night,20:00,08:00,Leave,P00056,85,Female,Heart Disease,Critical,17:01,D127,49
+S0057,D025,Doctor_D025,Pediatrics,H019,Hospital_19,Area_21,District_3,Government,178,63,5,2026-03-16,Morning,08:00,14:00,Leave,P00057,49,Male,Infection,Low,14:49,D025,77
+S0058,D119,Doctor_D119,Gynecology,H026,Hospital_26,Area_12,District_1,Rural Center,188,164,26,2026-03-07,Night,20:00,08:00,Leave,P00058,34,Female,Migraine,Critical,17:53,D119,33
+S0059,D055,Doctor_D055,General Medicine,H003,Hospital_3,Area_4,District_8,Government,278,104,32,2026-03-01,Morning,08:00,14:00,Leave,P00059,41,Female,Ear Infection,Medium,08:47,D055,55
+S0060,D103,Doctor_D103,General Medicine,H014,Hospital_14,Area_16,District_4,Rural Center,254,108,31,2026-03-01,Morning,08:00,14:00,Leave,P00060,19,Male,Ear Infection,Medium,10:35,D103,70
+S0061,D034,Doctor_D034,Neurology,H034,Hospital_34,Area_16,District_2,Government,129,103,26,2026-03-01,Morning,08:00,14:00,Available,P00061,69,Male,Pregnancy,Low,15:53,D034,15
+S0062,D071,Doctor_D071,Cardiology,H008,Hospital_8,Area_16,District_9,Government,138,64,19,2026-03-07,Morning,08:00,14:00,Available,P00062,64,Male,Asthma,Critical,15:22,D071,54
+S0063,D115,Doctor_D115,Neurology,H039,Hospital_39,Area_21,District_9,Private,107,139,6,2026-03-09,Evening,14:00,20:00,Emergency Duty,P00063,82,Male,Infection,Low,13:37,D115,155
+S0064,D045,Doctor_D045,Emergency,H030,Hospital_30,Area_15,District_1,Private,113,73,12,2026-03-18,Evening,14:00,20:00,Emergency Duty,P00064,67,Male,Diabetes,Critical,15:18,D045,110
+S0065,D138,Doctor_D138,Gynecology,H008,Hospital_8,Area_16,District_9,Government,138,64,19,2026-03-03,Morning,08:00,14:00,Emergency Duty,P00065,35,Male,Asthma,Low,17:09,D138,29
+S0066,D039,Doctor_D039,Gynecology,H029,Hospital_29,Area_9,District_1,Rural Center,68,26,6,2026-03-02,Morning,08:00,14:00,Available,P00066,82,Male,Pregnancy,Medium,11:28,D039,133
+S0067,D095,Doctor_D095,General Medicine,H035,Hospital_35,Area_14,District_4,Private,77,69,37,2026-03-05,Morning,08:00,14:00,Emergency Duty,P00067,5,Female,Fracture,Medium,13:20,D095,119
+S0068,D007,Doctor_D007,Neurology,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-03,Night,20:00,08:00,Leave,P00068,42,Male,Asthma,Low,16:57,D007,103
+S0069,D015,Doctor_D015,Dermatology,H009,Hospital_9,Area_25,District_8,Private,287,10,31,2026-03-05,Night,20:00,08:00,Leave,P00069,49,Male,Asthma,Low,12:27,D015,113
+S0070,D063,Doctor_D063,Pediatrics,H016,Hospital_16,Area_3,District_8,Rural Center,180,32,15,2026-03-11,Night,20:00,08:00,Leave,P00070,66,Female,Ear Infection,Medium,17:30,D063,31
+S0071,D034,Doctor_D034,Radiology,H035,Hospital_35,Area_14,District_4,Private,77,69,37,2026-03-18,Night,20:00,08:00,Emergency Duty,P00071,75,Male,Asthma,Critical,15:39,D034,45
+S0072,D052,Doctor_D052,Radiology,H038,Hospital_38,Area_15,District_9,Rural Center,159,144,19,2026-03-11,Evening,14:00,20:00,Available,P00072,53,Female,Fracture,Critical,14:38,D052,21
+S0073,D012,Doctor_D012,Dermatology,H033,Hospital_33,Area_21,District_5,Private,229,87,36,2026-03-14,Evening,14:00,20:00,Leave,P00073,41,Female,Asthma,Medium,17:06,D012,138
+S0074,D129,Doctor_D129,Cardiology,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-05,Morning,08:00,14:00,Leave,P00074,42,Female,Ear Infection,Low,16:58,D129,120
+S0075,D072,Doctor_D072,Dermatology,H035,Hospital_35,Area_14,District_4,Private,77,69,37,2026-03-13,Evening,14:00,20:00,Available,P00075,75,Male,Fracture,Low,15:45,D072,139
+S0076,D126,Doctor_D126,Pediatrics,H005,Hospital_5,Area_19,District_2,Private,57,10,6,2026-03-19,Night,20:00,08:00,Emergency Duty,P00076,44,Female,Diabetes,Medium,12:17,D126,83
+S0077,D119,Doctor_D119,Radiology,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-17,Night,20:00,08:00,Available,P00077,4,Male,Asthma,Critical,13:48,D119,61
+S0078,D145,Doctor_D145,Orthopedics,H025,Hospital_25,Area_7,District_9,Private,174,96,31,2026-03-14,Morning,08:00,14:00,Emergency Duty,P00078,80,Male,Heart Disease,Critical,09:55,D145,179
+S0079,D069,Doctor_D069,Pediatrics,H033,Hospital_33,Area_21,District_5,Private,229,87,36,2026-03-09,Night,20:00,08:00,Available,P00079,81,Male,Heart Disease,Low,09:49,D069,169
+S0080,D045,Doctor_D045,General Medicine,H013,Hospital_13,Area_19,District_8,Rural Center,150,155,7,2026-03-19,Night,20:00,08:00,Leave,P00080,63,Female,Infection,Low,15:22,D045,158
+S0081,D127,Doctor_D127,ENT,H016,Hospital_16,Area_3,District_8,Rural Center,180,32,15,2026-03-12,Morning,08:00,14:00,Emergency Duty,P00081,25,Female,Heart Disease,Medium,15:15,D127,109
+S0082,D052,Doctor_D052,Gynecology,H024,Hospital_24,Area_14,District_1,Private,272,98,40,2026-03-17,Morning,08:00,14:00,Leave,P00082,10,Female,Ear Infection,Critical,17:04,D052,153
+S0083,D150,Doctor_D150,Dermatology,H016,Hospital_16,Area_3,District_8,Rural Center,180,32,15,2026-03-15,Evening,14:00,20:00,Available,P00083,25,Female,Fever,Critical,08:41,D150,35
+S0084,D078,Doctor_D078,Radiology,H028,Hospital_28,Area_18,District_10,Government,270,28,40,2026-03-21,Night,20:00,08:00,Emergency Duty,P00084,71,Female,Pregnancy,Medium,13:23,D078,143
+S0085,D133,Doctor_D133,Neurology,H028,Hospital_28,Area_18,District_10,Government,270,28,40,2026-03-15,Evening,14:00,20:00,Leave,P00085,17,Female,Ear Infection,Low,17:55,D133,145
+S0086,D042,Doctor_D042,Gynecology,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-19,Evening,14:00,20:00,Available,P00086,48,Female,Skin Allergy,Medium,08:09,D042,173
+S0087,D005,Doctor_D005,General Medicine,H003,Hospital_3,Area_4,District_8,Government,278,104,32,2026-03-13,Morning,08:00,14:00,Leave,P00087,60,Female,Diabetes,Critical,09:32,D005,128
+S0088,D087,Doctor_D087,Cardiology,H034,Hospital_34,Area_16,District_2,Government,129,103,26,2026-03-16,Evening,14:00,20:00,Leave,P00088,19,Female,Fracture,Low,15:47,D087,49
+S0089,D067,Doctor_D067,Emergency,H026,Hospital_26,Area_12,District_1,Rural Center,188,164,26,2026-03-10,Evening,14:00,20:00,Leave,P00089,34,Female,Skin Allergy,Critical,10:10,D067,75
+S0090,D111,Doctor_D111,Pediatrics,H021,Hospital_21,Area_13,District_9,Private,293,152,27,2026-03-16,Evening,14:00,20:00,Leave,P00090,55,Male,Heart Disease,Low,16:17,D111,57
+S0091,D039,Doctor_D039,Cardiology,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-09,Morning,08:00,14:00,Available,P00091,62,Male,Skin Allergy,Critical,08:26,D039,52
+S0092,D001,Doctor_D001,Emergency,H010,Hospital_10,Area_18,District_2,Government,211,190,23,2026-03-02,Morning,08:00,14:00,Emergency Duty,P00092,28,Female,Diabetes,Low,15:17,D001,171
+S0093,D027,Doctor_D027,Gynecology,H035,Hospital_35,Area_14,District_4,Private,77,69,37,2026-03-04,Night,20:00,08:00,Leave,P00093,88,Female,Fracture,Medium,17:26,D027,17
+S0094,D055,Doctor_D055,Gynecology,H018,Hospital_18,Area_16,District_1,Private,230,162,30,2026-03-04,Night,20:00,08:00,Emergency Duty,P00094,58,Female,Pregnancy,Medium,09:29,D055,105
+S0095,D030,Doctor_D030,Cardiology,H022,Hospital_22,Area_15,District_5,Rural Center,190,160,5,2026-03-05,Night,20:00,08:00,Leave,P00095,79,Male,Fracture,Critical,16:10,D030,70
+S0096,D107,Doctor_D107,Neurology,H039,Hospital_39,Area_21,District_9,Private,107,139,6,2026-03-16,Night,20:00,08:00,Emergency Duty,P00096,70,Male,Ear Infection,Medium,17:09,D107,129
+S0097,D027,Doctor_D027,Neurology,H022,Hospital_22,Area_15,District_5,Rural Center,190,160,5,2026-03-02,Morning,08:00,14:00,Emergency Duty,P00097,81,Female,Asthma,Low,13:55,D027,63
+S0098,D131,Doctor_D131,Pediatrics,H031,Hospital_31,Area_20,District_3,Private,124,22,15,2026-03-14,Evening,14:00,20:00,Available,P00098,17,Female,Infection,Medium,12:36,D131,148
+S0099,D015,Doctor_D015,Orthopedics,H026,Hospital_26,Area_12,District_1,Rural Center,188,164,26,2026-03-14,Night,20:00,08:00,Leave,P00099,36,Female,Asthma,Medium,16:41,D015,130
+S0100,D055,Doctor_D055,Emergency,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-16,Evening,14:00,20:00,Available,P00100,44,Male,Ear Infection,Low,14:16,D055,153
+S0101,D116,Doctor_D116,General Medicine,H018,Hospital_18,Area_16,District_1,Private,230,162,30,2026-03-17,Night,20:00,08:00,Leave,P00101,68,Male,Infection,Medium,10:33,D116,164
+S0102,D127,Doctor_D127,Cardiology,H008,Hospital_8,Area_16,District_9,Government,138,64,19,2026-03-05,Evening,14:00,20:00,Available,P00102,90,Female,Infection,Low,13:37,D127,167
+S0103,D138,Doctor_D138,Emergency,H038,Hospital_38,Area_15,District_9,Rural Center,159,144,19,2026-03-06,Night,20:00,08:00,Emergency Duty,P00103,15,Male,Ear Infection,Low,08:51,D138,133
+S0104,D146,Doctor_D146,Gynecology,H038,Hospital_38,Area_15,District_9,Rural Center,159,144,19,2026-03-11,Night,20:00,08:00,Available,P00104,3,Female,Ear Infection,Low,13:15,D146,26
+S0105,D058,Doctor_D058,Neurology,H018,Hospital_18,Area_16,District_1,Private,230,162,30,2026-03-20,Evening,14:00,20:00,Emergency Duty,P00105,67,Female,Fever,Low,13:49,D058,89
+S0106,D089,Doctor_D089,Neurology,H025,Hospital_25,Area_7,District_9,Private,174,96,31,2026-03-05,Morning,08:00,14:00,Emergency Duty,P00106,74,Male,Diabetes,Low,09:56,D089,28
+S0107,D027,Doctor_D027,Pediatrics,H015,Hospital_15,Area_22,District_3,Private,190,184,28,2026-03-09,Evening,14:00,20:00,Emergency Duty,P00107,7,Female,Fever,Low,13:24,D027,40
+S0108,D103,Doctor_D103,Cardiology,H037,Hospital_37,Area_1,District_7,Government,59,189,15,2026-03-11,Evening,14:00,20:00,Leave,P00108,2,Female,Heart Disease,Medium,12:07,D103,169
+S0109,D033,Doctor_D033,Gynecology,H004,Hospital_4,Area_20,District_1,Rural Center,164,73,19,2026-03-03,Night,20:00,08:00,Emergency Duty,P00109,74,Female,Ear Infection,Medium,12:37,D033,142
+S0110,D101,Doctor_D101,Neurology,H001,Hospital_1,Area_5,District_10,Government,115,35,36,2026-03-18,Evening,14:00,20:00,Available,P00110,7,Male,Fracture,Low,11:44,D101,60
+S0111,D112,Doctor_D112,General Medicine,H023,Hospital_23,Area_13,District_9,Government,182,148,18,2026-03-09,Evening,14:00,20:00,Emergency Duty,P00111,35,Female,Migraine,Low,17:19,D112,108
+S0112,D027,Doctor_D027,Cardiology,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-21,Night,20:00,08:00,Emergency Duty,P00112,47,Male,Ear Infection,Medium,14:22,D027,119
+S0113,D034,Doctor_D034,Emergency,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-05,Morning,08:00,14:00,Emergency Duty,P00113,28,Female,Diabetes,Medium,09:16,D034,79
+S0114,D041,Doctor_D041,ENT,H014,Hospital_14,Area_16,District_4,Rural Center,254,108,31,2026-03-13,Morning,08:00,14:00,Available,P00114,77,Male,Asthma,Medium,14:30,D041,175
+S0115,D003,Doctor_D003,Orthopedics,H004,Hospital_4,Area_20,District_1,Rural Center,164,73,19,2026-03-13,Night,20:00,08:00,Emergency Duty,P00115,72,Male,Migraine,Low,08:09,D003,115
+S0116,D109,Doctor_D109,Gynecology,H013,Hospital_13,Area_19,District_8,Rural Center,150,155,7,2026-03-13,Evening,14:00,20:00,Emergency Duty,P00116,60,Male,Heart Disease,Medium,14:19,D109,14
+S0117,D001,Doctor_D001,Emergency,H035,Hospital_35,Area_14,District_4,Private,77,69,37,2026-03-05,Morning,08:00,14:00,Emergency Duty,P00117,66,Female,Pregnancy,Medium,09:53,D001,150
+S0118,D092,Doctor_D092,Emergency,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-08,Evening,14:00,20:00,Available,P00118,72,Female,Fracture,Low,12:11,D092,15
+S0119,D081,Doctor_D081,Neurology,H016,Hospital_16,Area_3,District_8,Rural Center,180,32,15,2026-03-21,Evening,14:00,20:00,Available,P00119,79,Female,Skin Allergy,Medium,13:54,D081,96
+S0120,D076,Doctor_D076,Pediatrics,H007,Hospital_7,Area_14,District_1,Rural Center,106,200,33,2026-03-21,Evening,14:00,20:00,Emergency Duty,P00120,67,Male,Fever,Medium,15:31,D076,177
+S0121,D030,Doctor_D030,Radiology,H012,Hospital_12,Area_14,District_9,Rural Center,98,82,23,2026-03-21,Night,20:00,08:00,Emergency Duty,P00121,63,Female,Heart Disease,Critical,10:56,D030,10
+S0122,D123,Doctor_D123,Orthopedics,H034,Hospital_34,Area_16,District_2,Government,129,103,26,2026-03-13,Morning,08:00,14:00,Emergency Duty,P00122,30,Male,Infection,Medium,14:32,D123,89
+S0123,D063,Doctor_D063,ENT,H019,Hospital_19,Area_21,District_3,Government,178,63,5,2026-03-12,Night,20:00,08:00,Leave,P00123,84,Male,Skin Allergy,Medium,15:52,D063,107
+S0124,D139,Doctor_D139,ENT,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-09,Morning,08:00,14:00,Available,P00124,20,Male,Skin Allergy,Medium,17:45,D139,32
+S0125,D007,Doctor_D007,Orthopedics,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-15,Night,20:00,08:00,Leave,P00125,86,Female,Fracture,Low,09:16,D007,139
+S0126,D028,Doctor_D028,ENT,H026,Hospital_26,Area_12,District_1,Rural Center,188,164,26,2026-03-13,Evening,14:00,20:00,Emergency Duty,P00126,30,Female,Fever,Critical,08:19,D028,68
+S0127,D109,Doctor_D109,Dermatology,H037,Hospital_37,Area_1,District_7,Government,59,189,15,2026-03-08,Morning,08:00,14:00,Available,P00127,69,Male,Fracture,Medium,11:03,D109,154
+S0128,D006,Doctor_D006,Gynecology,H017,Hospital_17,Area_17,District_7,Private,175,192,6,2026-03-08,Night,20:00,08:00,Available,P00128,67,Male,Pregnancy,Critical,11:42,D006,161
+S0129,D138,Doctor_D138,Gynecology,H011,Hospital_11,Area_4,District_6,Rural Center,299,187,37,2026-03-15,Morning,08:00,14:00,Available,P00129,73,Male,Skin Allergy,Low,12:13,D138,148
+S0130,D025,Doctor_D025,General Medicine,H032,Hospital_32,Area_6,District_5,Rural Center,293,48,22,2026-03-17,Night,20:00,08:00,Available,P00130,2,Male,Asthma,Medium,16:10,D025,76
+S0131,D107,Doctor_D107,Radiology,H004,Hospital_4,Area_20,District_1,Rural Center,164,73,19,2026-03-11,Morning,08:00,14:00,Emergency Duty,P00131,82,Female,Pregnancy,Medium,10:16,D107,146
+S0132,D043,Doctor_D043,Gynecology,H003,Hospital_3,Area_4,District_8,Government,278,104,32,2026-03-07,Night,20:00,08:00,Leave,P00132,36,Female,Fracture,Medium,14:44,D043,150
+S0133,D072,Doctor_D072,Dermatology,H035,Hospital_35,Area_14,District_4,Private,77,69,37,2026-03-11,Morning,08:00,14:00,Available,P00133,34,Female,Asthma,Medium,09:25,D072,103
+S0134,D072,Doctor_D072,General Medicine,H035,Hospital_35,Area_14,District_4,Private,77,69,37,2026-03-05,Night,20:00,08:00,Available,P00134,33,Male,Infection,Low,15:58,D072,153
+S0135,D138,Doctor_D138,Radiology,H032,Hospital_32,Area_6,District_5,Rural Center,293,48,22,2026-03-14,Night,20:00,08:00,Emergency Duty,P00135,31,Male,Pregnancy,Medium,11:23,D138,105
+S0136,D051,Doctor_D051,Orthopedics,H039,Hospital_39,Area_21,District_9,Private,107,139,6,2026-03-02,Morning,08:00,14:00,Available,P00136,52,Female,Skin Allergy,Critical,09:19,D051,40
+S0137,D034,Doctor_D034,Radiology,H023,Hospital_23,Area_13,District_9,Government,182,148,18,2026-03-03,Night,20:00,08:00,Available,P00137,49,Male,Asthma,Low,17:11,D034,174
+S0138,D102,Doctor_D102,Pediatrics,H014,Hospital_14,Area_16,District_4,Rural Center,254,108,31,2026-03-10,Evening,14:00,20:00,Emergency Duty,P00138,19,Female,Migraine,Critical,11:02,D102,79
+S0139,D023,Doctor_D023,Pediatrics,H002,Hospital_2,Area_25,District_8,Private,216,102,18,2026-03-15,Night,20:00,08:00,Available,P00139,38,Male,Ear Infection,Medium,13:06,D023,118
+S0140,D066,Doctor_D066,General Medicine,H011,Hospital_11,Area_4,District_6,Rural Center,299,187,37,2026-03-11,Night,20:00,08:00,Available,P00140,17,Male,Heart Disease,Medium,08:59,D066,167
+S0141,D063,Doctor_D063,Radiology,H024,Hospital_24,Area_14,District_1,Private,272,98,40,2026-03-17,Night,20:00,08:00,Leave,P00141,16,Male,Skin Allergy,Critical,11:32,D063,137
+S0142,D035,Doctor_D035,Neurology,H033,Hospital_33,Area_21,District_5,Private,229,87,36,2026-03-01,Night,20:00,08:00,Emergency Duty,P00142,16,Male,Ear Infection,Medium,17:52,D035,174
+S0143,D124,Doctor_D124,Neurology,H007,Hospital_7,Area_14,District_1,Rural Center,106,200,33,2026-03-02,Night,20:00,08:00,Emergency Duty,P00143,22,Male,Skin Allergy,Medium,11:56,D124,174
+S0144,D108,Doctor_D108,ENT,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-04,Evening,14:00,20:00,Emergency Duty,P00144,17,Male,Pregnancy,Low,12:38,D108,121
+S0145,D012,Doctor_D012,Gynecology,H038,Hospital_38,Area_15,District_9,Rural Center,159,144,19,2026-03-18,Evening,14:00,20:00,Leave,P00145,32,Male,Heart Disease,Critical,11:39,D012,15
+S0146,D109,Doctor_D109,Orthopedics,H010,Hospital_10,Area_18,District_2,Government,211,190,23,2026-03-20,Evening,14:00,20:00,Emergency Duty,P00146,25,Female,Pregnancy,Medium,11:13,D109,55
+S0147,D060,Doctor_D060,Cardiology,H028,Hospital_28,Area_18,District_10,Government,270,28,40,2026-03-11,Evening,14:00,20:00,Available,P00147,59,Male,Ear Infection,Low,18:00,D060,42
+S0148,D074,Doctor_D074,Emergency,H030,Hospital_30,Area_15,District_1,Private,113,73,12,2026-03-17,Evening,14:00,20:00,Available,P00148,73,Female,Heart Disease,Medium,08:44,D074,136
+S0149,D147,Doctor_D147,Gynecology,H039,Hospital_39,Area_21,District_9,Private,107,139,6,2026-03-09,Night,20:00,08:00,Leave,P00149,61,Male,Pregnancy,Medium,13:08,D147,9
+S0150,D110,Doctor_D110,Orthopedics,H006,Hospital_6,Area_21,District_9,Government,290,102,18,2026-03-20,Evening,14:00,20:00,Emergency Duty,P00150,72,Female,Heart Disease,Critical,13:24,D110,97
+S0151,D107,Doctor_D107,General Medicine,H012,Hospital_12,Area_14,District_9,Rural Center,98,82,23,2026-03-19,Evening,14:00,20:00,Emergency Duty,P00151,15,Male,Ear Infection,Critical,16:52,D107,8
+S0152,D026,Doctor_D026,Dermatology,H006,Hospital_6,Area_21,District_9,Government,290,102,18,2026-03-18,Evening,14:00,20:00,Available,P00152,82,Female,Ear Infection,Low,13:44,D026,129
+S0153,D022,Doctor_D022,Dermatology,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-17,Night,20:00,08:00,Emergency Duty,P00153,1,Male,Diabetes,Medium,15:36,D022,59
+S0154,D038,Doctor_D038,Emergency,H003,Hospital_3,Area_4,District_8,Government,278,104,32,2026-03-04,Night,20:00,08:00,Leave,P00154,41,Female,Diabetes,Medium,10:31,D038,71
+S0155,D095,Doctor_D095,Pediatrics,H023,Hospital_23,Area_13,District_9,Government,182,148,18,2026-03-09,Morning,08:00,14:00,Leave,P00155,71,Female,Ear Infection,Critical,09:04,D095,26
+S0156,D020,Doctor_D020,Neurology,H014,Hospital_14,Area_16,District_4,Rural Center,254,108,31,2026-03-14,Night,20:00,08:00,Available,P00156,17,Female,Pregnancy,Critical,10:54,D020,169
+S0157,D068,Doctor_D068,Cardiology,H024,Hospital_24,Area_14,District_1,Private,272,98,40,2026-03-09,Morning,08:00,14:00,Emergency Duty,P00157,62,Male,Pregnancy,Medium,11:35,D068,57
+S0158,D140,Doctor_D140,Dermatology,H004,Hospital_4,Area_20,District_1,Rural Center,164,73,19,2026-03-11,Morning,08:00,14:00,Leave,P00158,67,Male,Fever,Medium,17:23,D140,98
+S0159,D010,Doctor_D010,Gynecology,H004,Hospital_4,Area_20,District_1,Rural Center,164,73,19,2026-03-06,Morning,08:00,14:00,Emergency Duty,P00159,6,Female,Fracture,Low,13:23,D010,64
+S0160,D030,Doctor_D030,Emergency,H019,Hospital_19,Area_21,District_3,Government,178,63,5,2026-03-17,Night,20:00,08:00,Available,P00160,35,Female,Infection,Low,10:13,D030,97
+S0161,D117,Doctor_D117,Pediatrics,H002,Hospital_2,Area_25,District_8,Private,216,102,18,2026-03-21,Evening,14:00,20:00,Available,P00161,2,Female,Fever,Low,14:03,D117,69
+S0162,D142,Doctor_D142,Pediatrics,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-03,Morning,08:00,14:00,Emergency Duty,P00162,23,Male,Pregnancy,Low,08:09,D142,58
+S0163,D114,Doctor_D114,ENT,H007,Hospital_7,Area_14,District_1,Rural Center,106,200,33,2026-03-17,Evening,14:00,20:00,Leave,P00163,42,Female,Heart Disease,Low,12:08,D114,157
+S0164,D047,Doctor_D047,Emergency,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-14,Morning,08:00,14:00,Emergency Duty,P00164,61,Female,Fever,Medium,13:04,D047,10
+S0165,D027,Doctor_D027,Emergency,H023,Hospital_23,Area_13,District_9,Government,182,148,18,2026-03-14,Night,20:00,08:00,Emergency Duty,P00165,75,Female,Diabetes,Low,17:51,D027,170
+S0166,D108,Doctor_D108,ENT,H022,Hospital_22,Area_15,District_5,Rural Center,190,160,5,2026-03-20,Morning,08:00,14:00,Emergency Duty,P00166,85,Female,Ear Infection,Critical,16:46,D108,152
+S0167,D116,Doctor_D116,Orthopedics,H009,Hospital_9,Area_25,District_8,Private,287,10,31,2026-03-09,Night,20:00,08:00,Emergency Duty,P00167,68,Female,Ear Infection,Medium,16:02,D116,160
+S0168,D139,Doctor_D139,Neurology,H034,Hospital_34,Area_16,District_2,Government,129,103,26,2026-03-01,Evening,14:00,20:00,Emergency Duty,P00168,6,Female,Migraine,Medium,12:21,D139,64
+S0169,D131,Doctor_D131,ENT,H002,Hospital_2,Area_25,District_8,Private,216,102,18,2026-03-11,Evening,14:00,20:00,Emergency Duty,P00169,81,Male,Skin Allergy,Medium,11:34,D131,18
+S0170,D029,Doctor_D029,Neurology,H029,Hospital_29,Area_9,District_1,Rural Center,68,26,6,2026-03-18,Evening,14:00,20:00,Emergency Duty,P00170,7,Female,Skin Allergy,Low,08:08,D029,88
+S0171,D087,Doctor_D087,Pediatrics,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-03,Evening,14:00,20:00,Leave,P00171,16,Male,Fracture,Critical,08:50,D087,80
+S0172,D105,Doctor_D105,Pediatrics,H005,Hospital_5,Area_19,District_2,Private,57,10,6,2026-03-01,Night,20:00,08:00,Emergency Duty,P00172,90,Male,Pregnancy,Critical,13:48,D105,151
+S0173,D094,Doctor_D094,Gynecology,H005,Hospital_5,Area_19,District_2,Private,57,10,6,2026-03-14,Evening,14:00,20:00,Emergency Duty,P00173,60,Male,Infection,Medium,13:00,D094,64
+S0174,D011,Doctor_D011,Pediatrics,H030,Hospital_30,Area_15,District_1,Private,113,73,12,2026-03-08,Night,20:00,08:00,Emergency Duty,P00174,51,Female,Infection,Critical,12:06,D011,43
+S0175,D077,Doctor_D077,General Medicine,H039,Hospital_39,Area_21,District_9,Private,107,139,6,2026-03-10,Night,20:00,08:00,Leave,P00175,64,Male,Fracture,Low,14:08,D077,99
+S0176,D112,Doctor_D112,Radiology,H004,Hospital_4,Area_20,District_1,Rural Center,164,73,19,2026-03-16,Night,20:00,08:00,Leave,P00176,78,Male,Ear Infection,Critical,13:50,D112,79
+S0177,D141,Doctor_D141,Gynecology,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-01,Night,20:00,08:00,Leave,P00177,12,Female,Heart Disease,Critical,12:42,D141,61
+S0178,D068,Doctor_D068,Pediatrics,H028,Hospital_28,Area_18,District_10,Government,270,28,40,2026-03-02,Evening,14:00,20:00,Available,P00178,77,Male,Fracture,Medium,14:21,D068,17
+S0179,D018,Doctor_D018,General Medicine,H020,Hospital_20,Area_25,District_4,Rural Center,285,145,19,2026-03-14,Morning,08:00,14:00,Emergency Duty,P00179,3,Male,Fever,Low,08:03,D018,13
+S0180,D138,Doctor_D138,General Medicine,H007,Hospital_7,Area_14,District_1,Rural Center,106,200,33,2026-03-20,Evening,14:00,20:00,Available,P00180,72,Male,Migraine,Low,13:40,D138,73
+S0181,D076,Doctor_D076,Radiology,H015,Hospital_15,Area_22,District_3,Private,190,184,28,2026-03-09,Night,20:00,08:00,Available,P00181,24,Male,Skin Allergy,Low,17:23,D076,66
+S0182,D143,Doctor_D143,General Medicine,H014,Hospital_14,Area_16,District_4,Rural Center,254,108,31,2026-03-11,Night,20:00,08:00,Leave,P00182,53,Male,Fever,Critical,15:43,D143,52
+S0183,D130,Doctor_D130,Orthopedics,H001,Hospital_1,Area_5,District_10,Government,115,35,36,2026-03-07,Night,20:00,08:00,Available,P00183,23,Female,Heart Disease,Low,09:35,D130,85
+S0184,D038,Doctor_D038,Orthopedics,H007,Hospital_7,Area_14,District_1,Rural Center,106,200,33,2026-03-08,Morning,08:00,14:00,Available,P00184,37,Female,Fever,Critical,15:33,D038,27
+S0185,D114,Doctor_D114,Orthopedics,H008,Hospital_8,Area_16,District_9,Government,138,64,19,2026-03-04,Morning,08:00,14:00,Available,P00185,26,Male,Heart Disease,Low,11:53,D114,61
+S0186,D074,Doctor_D074,Radiology,H011,Hospital_11,Area_4,District_6,Rural Center,299,187,37,2026-03-14,Night,20:00,08:00,Available,P00186,5,Female,Infection,Medium,12:18,D074,94
+S0187,D092,Doctor_D092,Gynecology,H006,Hospital_6,Area_21,District_9,Government,290,102,18,2026-03-03,Evening,14:00,20:00,Leave,P00187,32,Female,Diabetes,Low,14:31,D092,159
+S0188,D030,Doctor_D030,Gynecology,H001,Hospital_1,Area_5,District_10,Government,115,35,36,2026-03-09,Morning,08:00,14:00,Emergency Duty,P00188,39,Female,Diabetes,Medium,09:14,D030,121
+S0189,D094,Doctor_D094,Gynecology,H016,Hospital_16,Area_3,District_8,Rural Center,180,32,15,2026-03-16,Evening,14:00,20:00,Emergency Duty,P00189,3,Female,Fracture,Medium,13:23,D094,48
+S0190,D078,Doctor_D078,Radiology,H031,Hospital_31,Area_20,District_3,Private,124,22,15,2026-03-05,Night,20:00,08:00,Available,P00190,59,Male,Fracture,Low,10:09,D078,25
+S0191,D065,Doctor_D065,Dermatology,H028,Hospital_28,Area_18,District_10,Government,270,28,40,2026-03-06,Morning,08:00,14:00,Leave,P00191,61,Female,Heart Disease,Medium,14:04,D065,44
+S0192,D141,Doctor_D141,Cardiology,H031,Hospital_31,Area_20,District_3,Private,124,22,15,2026-03-05,Evening,14:00,20:00,Emergency Duty,P00192,41,Male,Fracture,Medium,15:40,D141,141
+S0193,D009,Doctor_D009,Dermatology,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-12,Morning,08:00,14:00,Emergency Duty,P00193,46,Female,Diabetes,Critical,11:16,D009,35
+S0194,D048,Doctor_D048,Neurology,H034,Hospital_34,Area_16,District_2,Government,129,103,26,2026-03-20,Evening,14:00,20:00,Emergency Duty,P00194,27,Male,Infection,Medium,08:33,D048,88
+S0195,D145,Doctor_D145,Dermatology,H015,Hospital_15,Area_22,District_3,Private,190,184,28,2026-03-02,Evening,14:00,20:00,Available,P00195,38,Male,Infection,Low,12:10,D145,39
+S0196,D058,Doctor_D058,Neurology,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-05,Evening,14:00,20:00,Available,P00196,30,Male,Asthma,Critical,16:38,D058,135
+S0197,D131,Doctor_D131,Gynecology,H017,Hospital_17,Area_17,District_7,Private,175,192,6,2026-03-15,Night,20:00,08:00,Emergency Duty,P00197,66,Female,Fracture,Critical,17:14,D131,96
+S0198,D051,Doctor_D051,Neurology,H024,Hospital_24,Area_14,District_1,Private,272,98,40,2026-03-07,Evening,14:00,20:00,Available,P00198,19,Male,Infection,Low,09:15,D051,46
+S0199,D125,Doctor_D125,General Medicine,H011,Hospital_11,Area_4,District_6,Rural Center,299,187,37,2026-03-12,Evening,14:00,20:00,Available,P00199,79,Male,Infection,Low,11:08,D125,117
+S0200,D051,Doctor_D051,Orthopedics,H019,Hospital_19,Area_21,District_3,Government,178,63,5,2026-03-19,Night,20:00,08:00,Emergency Duty,P00200,86,Male,Infection,Medium,13:50,D051,127
+S0201,D142,Doctor_D142,Dermatology,H008,Hospital_8,Area_16,District_9,Government,138,64,19,2026-03-16,Morning,08:00,14:00,Emergency Duty,P00201,45,Male,Migraine,Low,08:53,D142,135
+S0202,D082,Doctor_D082,Neurology,H011,Hospital_11,Area_4,District_6,Rural Center,299,187,37,2026-03-20,Night,20:00,08:00,Leave,P00202,74,Male,Migraine,Medium,17:40,D082,111
+S0203,D019,Doctor_D019,Dermatology,H033,Hospital_33,Area_21,District_5,Private,229,87,36,2026-03-01,Evening,14:00,20:00,Available,P00203,42,Male,Diabetes,Medium,09:04,D019,69
+S0204,D079,Doctor_D079,General Medicine,H037,Hospital_37,Area_1,District_7,Government,59,189,15,2026-03-10,Evening,14:00,20:00,Available,P00204,82,Female,Fever,Low,15:05,D079,115
+S0205,D111,Doctor_D111,Neurology,H018,Hospital_18,Area_16,District_1,Private,230,162,30,2026-03-12,Night,20:00,08:00,Emergency Duty,P00205,73,Female,Ear Infection,Medium,11:42,D111,160
+S0206,D066,Doctor_D066,Dermatology,H002,Hospital_2,Area_25,District_8,Private,216,102,18,2026-03-05,Night,20:00,08:00,Leave,P00206,13,Female,Diabetes,Critical,10:56,D066,150
+S0207,D050,Doctor_D050,Orthopedics,H008,Hospital_8,Area_16,District_9,Government,138,64,19,2026-03-16,Evening,14:00,20:00,Emergency Duty,P00207,32,Male,Infection,Low,15:40,D050,23
+S0208,D010,Doctor_D010,ENT,H011,Hospital_11,Area_4,District_6,Rural Center,299,187,37,2026-03-19,Night,20:00,08:00,Leave,P00208,90,Female,Pregnancy,Low,16:39,D010,149
+S0209,D128,Doctor_D128,Gynecology,H009,Hospital_9,Area_25,District_8,Private,287,10,31,2026-03-18,Evening,14:00,20:00,Emergency Duty,P00209,72,Female,Fracture,Critical,08:13,D128,155
+S0210,D096,Doctor_D096,Dermatology,H019,Hospital_19,Area_21,District_3,Government,178,63,5,2026-03-15,Morning,08:00,14:00,Available,P00210,89,Female,Heart Disease,Medium,14:17,D096,96
+S0211,D050,Doctor_D050,ENT,H012,Hospital_12,Area_14,District_9,Rural Center,98,82,23,2026-03-02,Morning,08:00,14:00,Leave,P00211,73,Female,Fracture,Critical,10:17,D050,130
+S0212,D123,Doctor_D123,Pediatrics,H034,Hospital_34,Area_16,District_2,Government,129,103,26,2026-03-20,Morning,08:00,14:00,Available,P00212,57,Male,Pregnancy,Low,17:49,D123,107
+S0213,D120,Doctor_D120,Neurology,H021,Hospital_21,Area_13,District_9,Private,293,152,27,2026-03-05,Morning,08:00,14:00,Available,P00213,43,Male,Fracture,Critical,13:22,D120,163
+S0214,D136,Doctor_D136,Radiology,H025,Hospital_25,Area_7,District_9,Private,174,96,31,2026-03-14,Evening,14:00,20:00,Leave,P00214,59,Female,Fracture,Critical,11:59,D136,162
+S0215,D130,Doctor_D130,Neurology,H033,Hospital_33,Area_21,District_5,Private,229,87,36,2026-03-05,Evening,14:00,20:00,Emergency Duty,P00215,1,Female,Heart Disease,Medium,11:31,D130,102
+S0216,D132,Doctor_D132,Emergency,H025,Hospital_25,Area_7,District_9,Private,174,96,31,2026-03-15,Night,20:00,08:00,Leave,P00216,69,Female,Diabetes,Low,11:03,D132,18
+S0217,D022,Doctor_D022,Cardiology,H029,Hospital_29,Area_9,District_1,Rural Center,68,26,6,2026-03-18,Night,20:00,08:00,Leave,P00217,18,Female,Skin Allergy,Low,09:49,D022,126
+S0218,D115,Doctor_D115,Emergency,H028,Hospital_28,Area_18,District_10,Government,270,28,40,2026-03-07,Night,20:00,08:00,Emergency Duty,P00218,58,Female,Skin Allergy,Medium,08:37,D115,94
+S0219,D045,Doctor_D045,Orthopedics,H013,Hospital_13,Area_19,District_8,Rural Center,150,155,7,2026-03-01,Night,20:00,08:00,Emergency Duty,P00219,8,Male,Pregnancy,Low,12:39,D045,119
+S0220,D082,Doctor_D082,Cardiology,H007,Hospital_7,Area_14,District_1,Rural Center,106,200,33,2026-03-13,Evening,14:00,20:00,Available,P00220,60,Female,Skin Allergy,Medium,13:43,D082,89
+S0221,D130,Doctor_D130,Gynecology,H016,Hospital_16,Area_3,District_8,Rural Center,180,32,15,2026-03-18,Morning,08:00,14:00,Leave,P00221,79,Female,Pregnancy,Low,10:48,D130,86
+S0222,D038,Doctor_D038,Emergency,H016,Hospital_16,Area_3,District_8,Rural Center,180,32,15,2026-03-07,Evening,14:00,20:00,Available,P00222,28,Female,Fracture,Low,10:20,D038,31
+S0223,D109,Doctor_D109,Orthopedics,H026,Hospital_26,Area_12,District_1,Rural Center,188,164,26,2026-03-12,Morning,08:00,14:00,Emergency Duty,P00223,42,Female,Skin Allergy,Low,15:44,D109,104
+S0224,D125,Doctor_D125,Neurology,H028,Hospital_28,Area_18,District_10,Government,270,28,40,2026-03-10,Night,20:00,08:00,Emergency Duty,P00224,75,Female,Diabetes,Medium,15:36,D125,49
+S0225,D026,Doctor_D026,ENT,H022,Hospital_22,Area_15,District_5,Rural Center,190,160,5,2026-03-05,Evening,14:00,20:00,Leave,P00225,14,Male,Pregnancy,Medium,11:04,D026,85
+S0226,D127,Doctor_D127,Dermatology,H024,Hospital_24,Area_14,District_1,Private,272,98,40,2026-03-19,Night,20:00,08:00,Leave,P00226,72,Female,Diabetes,Medium,17:32,D127,105
+S0227,D138,Doctor_D138,Pediatrics,H019,Hospital_19,Area_21,District_3,Government,178,63,5,2026-03-18,Morning,08:00,14:00,Available,P00227,77,Male,Fever,Medium,10:50,D138,163
+S0228,D016,Doctor_D016,General Medicine,H031,Hospital_31,Area_20,District_3,Private,124,22,15,2026-03-12,Evening,14:00,20:00,Leave,P00228,47,Female,Infection,Medium,15:09,D016,62
+S0229,D081,Doctor_D081,Orthopedics,H039,Hospital_39,Area_21,District_9,Private,107,139,6,2026-03-01,Evening,14:00,20:00,Leave,P00229,84,Female,Ear Infection,Critical,14:33,D081,61
+S0230,D060,Doctor_D060,Gynecology,H039,Hospital_39,Area_21,District_9,Private,107,139,6,2026-03-07,Morning,08:00,14:00,Emergency Duty,P00230,38,Male,Skin Allergy,Low,13:27,D060,94
+S0231,D024,Doctor_D024,Cardiology,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-18,Evening,14:00,20:00,Emergency Duty,P00231,23,Female,Fracture,Medium,10:36,D024,116
+S0232,D084,Doctor_D084,Neurology,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-07,Night,20:00,08:00,Available,P00232,21,Male,Pregnancy,Low,16:55,D084,42
+S0233,D031,Doctor_D031,Radiology,H028,Hospital_28,Area_18,District_10,Government,270,28,40,2026-03-05,Evening,14:00,20:00,Leave,P00233,18,Female,Ear Infection,Critical,17:58,D031,179
+S0234,D082,Doctor_D082,General Medicine,H009,Hospital_9,Area_25,District_8,Private,287,10,31,2026-03-12,Night,20:00,08:00,Available,P00234,29,Male,Migraine,Critical,10:20,D082,130
+S0235,D009,Doctor_D009,Orthopedics,H019,Hospital_19,Area_21,District_3,Government,178,63,5,2026-03-18,Night,20:00,08:00,Leave,P00235,73,Male,Infection,Medium,09:31,D009,40
+S0236,D072,Doctor_D072,Cardiology,H020,Hospital_20,Area_25,District_4,Rural Center,285,145,19,2026-03-13,Night,20:00,08:00,Leave,P00236,4,Female,Infection,Critical,13:56,D072,66
+S0237,D053,Doctor_D053,Neurology,H019,Hospital_19,Area_21,District_3,Government,178,63,5,2026-03-02,Night,20:00,08:00,Leave,P00237,67,Male,Heart Disease,Low,08:05,D053,33
+S0238,D103,Doctor_D103,ENT,H001,Hospital_1,Area_5,District_10,Government,115,35,36,2026-03-19,Evening,14:00,20:00,Emergency Duty,P00238,84,Female,Asthma,Low,09:47,D103,115
+S0239,D096,Doctor_D096,Gynecology,H034,Hospital_34,Area_16,District_2,Government,129,103,26,2026-03-14,Night,20:00,08:00,Leave,P00239,48,Male,Infection,Low,13:57,D096,42
+S0240,D061,Doctor_D061,Pediatrics,H009,Hospital_9,Area_25,District_8,Private,287,10,31,2026-03-13,Morning,08:00,14:00,Leave,P00240,79,Female,Ear Infection,Low,08:21,D061,18
+S0241,D045,Doctor_D045,General Medicine,H030,Hospital_30,Area_15,District_1,Private,113,73,12,2026-03-14,Night,20:00,08:00,Leave,P00241,54,Male,Infection,Critical,08:07,D045,174
+S0242,D096,Doctor_D096,Emergency,H007,Hospital_7,Area_14,District_1,Rural Center,106,200,33,2026-03-02,Evening,14:00,20:00,Emergency Duty,P00242,59,Male,Pregnancy,Medium,13:50,D096,154
+S0243,D016,Doctor_D016,Pediatrics,H001,Hospital_1,Area_5,District_10,Government,115,35,36,2026-03-21,Evening,14:00,20:00,Emergency Duty,P00243,16,Female,Fracture,Low,10:00,D016,98
+S0244,D034,Doctor_D034,General Medicine,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-16,Morning,08:00,14:00,Emergency Duty,P00244,4,Female,Heart Disease,Critical,12:55,D034,115
+S0245,D024,Doctor_D024,Emergency,H010,Hospital_10,Area_18,District_2,Government,211,190,23,2026-03-17,Evening,14:00,20:00,Available,P00245,17,Female,Ear Infection,Critical,17:17,D024,109
+S0246,D062,Doctor_D062,ENT,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-11,Night,20:00,08:00,Leave,P00246,15,Male,Infection,Critical,14:28,D062,161
+S0247,D095,Doctor_D095,Dermatology,H001,Hospital_1,Area_5,District_10,Government,115,35,36,2026-03-04,Morning,08:00,14:00,Available,P00247,15,Male,Fever,Critical,09:38,D095,115
+S0248,D061,Doctor_D061,ENT,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-20,Morning,08:00,14:00,Available,P00248,74,Female,Pregnancy,Medium,13:14,D061,105
+S0249,D011,Doctor_D011,Neurology,H018,Hospital_18,Area_16,District_1,Private,230,162,30,2026-03-20,Night,20:00,08:00,Leave,P00249,57,Male,Asthma,Medium,08:29,D011,127
+S0250,D114,Doctor_D114,Neurology,H039,Hospital_39,Area_21,District_9,Private,107,139,6,2026-03-17,Night,20:00,08:00,Available,P00250,57,Female,Asthma,Critical,08:56,D114,156
+S0251,D047,Doctor_D047,Gynecology,H005,Hospital_5,Area_19,District_2,Private,57,10,6,2026-03-14,Evening,14:00,20:00,Emergency Duty,P00251,72,Female,Migraine,Critical,16:42,D047,61
+S0252,D079,Doctor_D079,Orthopedics,H020,Hospital_20,Area_25,District_4,Rural Center,285,145,19,2026-03-16,Morning,08:00,14:00,Available,P00252,47,Female,Asthma,Critical,09:04,D079,82
+S0253,D036,Doctor_D036,Orthopedics,H006,Hospital_6,Area_21,District_9,Government,290,102,18,2026-03-15,Morning,08:00,14:00,Available,P00253,58,Female,Ear Infection,Medium,16:33,D036,143
+S0254,D096,Doctor_D096,Radiology,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-07,Morning,08:00,14:00,Leave,P00254,80,Male,Migraine,Medium,08:14,D096,8
+S0255,D069,Doctor_D069,General Medicine,H028,Hospital_28,Area_18,District_10,Government,270,28,40,2026-03-19,Night,20:00,08:00,Leave,P00255,15,Male,Diabetes,Critical,16:33,D069,163
+S0256,D147,Doctor_D147,Emergency,H033,Hospital_33,Area_21,District_5,Private,229,87,36,2026-03-16,Evening,14:00,20:00,Emergency Duty,P00256,44,Male,Infection,Low,09:33,D147,19
+S0257,D030,Doctor_D030,Radiology,H022,Hospital_22,Area_15,District_5,Rural Center,190,160,5,2026-03-17,Morning,08:00,14:00,Leave,P00257,26,Male,Pregnancy,Low,10:00,D030,63
+S0258,D056,Doctor_D056,Dermatology,H004,Hospital_4,Area_20,District_1,Rural Center,164,73,19,2026-03-19,Morning,08:00,14:00,Leave,P00258,35,Male,Asthma,Critical,16:35,D056,68
+S0259,D018,Doctor_D018,General Medicine,H028,Hospital_28,Area_18,District_10,Government,270,28,40,2026-03-01,Night,20:00,08:00,Leave,P00259,79,Female,Migraine,Medium,12:31,D018,116
+S0260,D018,Doctor_D018,General Medicine,H002,Hospital_2,Area_25,District_8,Private,216,102,18,2026-03-21,Morning,08:00,14:00,Leave,P00260,54,Female,Diabetes,Critical,11:39,D018,42
+S0261,D046,Doctor_D046,General Medicine,H013,Hospital_13,Area_19,District_8,Rural Center,150,155,7,2026-03-12,Morning,08:00,14:00,Available,P00261,58,Female,Infection,Low,11:54,D046,70
+S0262,D040,Doctor_D040,Gynecology,H022,Hospital_22,Area_15,District_5,Rural Center,190,160,5,2026-03-04,Night,20:00,08:00,Leave,P00262,88,Male,Migraine,Medium,16:53,D040,72
+S0263,D075,Doctor_D075,Gynecology,H035,Hospital_35,Area_14,District_4,Private,77,69,37,2026-03-02,Morning,08:00,14:00,Leave,P00263,59,Male,Fracture,Low,10:15,D075,131
+S0264,D026,Doctor_D026,Pediatrics,H010,Hospital_10,Area_18,District_2,Government,211,190,23,2026-03-17,Evening,14:00,20:00,Leave,P00264,13,Male,Infection,Medium,15:26,D026,152
+S0265,D030,Doctor_D030,Dermatology,H002,Hospital_2,Area_25,District_8,Private,216,102,18,2026-03-21,Morning,08:00,14:00,Emergency Duty,P00265,82,Female,Skin Allergy,Critical,16:28,D030,112
+S0266,D007,Doctor_D007,Orthopedics,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-14,Night,20:00,08:00,Available,P00266,8,Female,Skin Allergy,Critical,14:48,D007,115
+S0267,D025,Doctor_D025,ENT,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-20,Morning,08:00,14:00,Leave,P00267,34,Male,Diabetes,Low,12:37,D025,148
+S0268,D138,Doctor_D138,Radiology,H005,Hospital_5,Area_19,District_2,Private,57,10,6,2026-03-04,Evening,14:00,20:00,Leave,P00268,59,Female,Heart Disease,Medium,08:25,D138,40
+S0269,D022,Doctor_D022,General Medicine,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-16,Evening,14:00,20:00,Emergency Duty,P00269,17,Female,Migraine,Low,14:29,D022,135
+S0270,D008,Doctor_D008,Gynecology,H012,Hospital_12,Area_14,District_9,Rural Center,98,82,23,2026-03-20,Evening,14:00,20:00,Available,P00270,32,Male,Migraine,Low,09:03,D008,80
+S0271,D011,Doctor_D011,Cardiology,H001,Hospital_1,Area_5,District_10,Government,115,35,36,2026-03-03,Evening,14:00,20:00,Available,P00271,75,Female,Diabetes,Medium,08:43,D011,28
+S0272,D138,Doctor_D138,Dermatology,H011,Hospital_11,Area_4,District_6,Rural Center,299,187,37,2026-03-06,Evening,14:00,20:00,Emergency Duty,P00272,46,Male,Diabetes,Critical,14:06,D138,64
+S0273,D064,Doctor_D064,Neurology,H029,Hospital_29,Area_9,District_1,Rural Center,68,26,6,2026-03-10,Night,20:00,08:00,Emergency Duty,P00273,42,Female,Ear Infection,Low,11:42,D064,173
+S0274,D124,Doctor_D124,Orthopedics,H007,Hospital_7,Area_14,District_1,Rural Center,106,200,33,2026-03-08,Evening,14:00,20:00,Available,P00274,11,Female,Skin Allergy,Low,11:55,D124,40
+S0275,D043,Doctor_D043,Dermatology,H035,Hospital_35,Area_14,District_4,Private,77,69,37,2026-03-13,Night,20:00,08:00,Emergency Duty,P00275,28,Male,Fever,Medium,09:15,D043,60
+S0276,D103,Doctor_D103,Pediatrics,H028,Hospital_28,Area_18,District_10,Government,270,28,40,2026-03-21,Morning,08:00,14:00,Leave,P00276,66,Female,Diabetes,Low,13:18,D103,22
+S0277,D019,Doctor_D019,Radiology,H013,Hospital_13,Area_19,District_8,Rural Center,150,155,7,2026-03-15,Morning,08:00,14:00,Emergency Duty,P00277,72,Female,Fever,Critical,10:02,D019,47
+S0278,D118,Doctor_D118,Cardiology,H014,Hospital_14,Area_16,District_4,Rural Center,254,108,31,2026-03-07,Evening,14:00,20:00,Available,P00278,32,Female,Infection,Critical,17:13,D118,160
+S0279,D076,Doctor_D076,Dermatology,H005,Hospital_5,Area_19,District_2,Private,57,10,6,2026-03-09,Evening,14:00,20:00,Leave,P00279,7,Male,Fever,Critical,12:30,D076,117
+S0280,D011,Doctor_D011,Dermatology,H025,Hospital_25,Area_7,District_9,Private,174,96,31,2026-03-15,Morning,08:00,14:00,Emergency Duty,P00280,39,Male,Infection,Critical,09:18,D011,33
+S0281,D050,Doctor_D050,Orthopedics,H001,Hospital_1,Area_5,District_10,Government,115,35,36,2026-03-20,Morning,08:00,14:00,Emergency Duty,P00281,88,Male,Migraine,Critical,11:19,D050,12
+S0282,D144,Doctor_D144,Orthopedics,H022,Hospital_22,Area_15,District_5,Rural Center,190,160,5,2026-03-18,Morning,08:00,14:00,Available,P00282,29,Male,Heart Disease,Low,16:06,D144,40
+S0283,D083,Doctor_D083,Radiology,H021,Hospital_21,Area_13,District_9,Private,293,152,27,2026-03-18,Night,20:00,08:00,Leave,P00283,25,Female,Fever,Critical,09:26,D083,76
+S0284,D091,Doctor_D091,Gynecology,H014,Hospital_14,Area_16,District_4,Rural Center,254,108,31,2026-03-13,Evening,14:00,20:00,Emergency Duty,P00284,68,Female,Asthma,Low,17:15,D091,51
+S0285,D123,Doctor_D123,Orthopedics,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-20,Night,20:00,08:00,Available,P00285,68,Male,Pregnancy,Low,14:43,D123,86
+S0286,D038,Doctor_D038,Gynecology,H025,Hospital_25,Area_7,District_9,Private,174,96,31,2026-03-02,Morning,08:00,14:00,Leave,P00286,76,Female,Pregnancy,Low,13:26,D038,13
+S0287,D034,Doctor_D034,Radiology,H037,Hospital_37,Area_1,District_7,Government,59,189,15,2026-03-13,Night,20:00,08:00,Emergency Duty,P00287,35,Male,Infection,Low,15:00,D034,82
+S0288,D098,Doctor_D098,General Medicine,H017,Hospital_17,Area_17,District_7,Private,175,192,6,2026-03-19,Evening,14:00,20:00,Leave,P00288,25,Male,Infection,Low,16:50,D098,58
+S0289,D123,Doctor_D123,Gynecology,H013,Hospital_13,Area_19,District_8,Rural Center,150,155,7,2026-03-10,Morning,08:00,14:00,Available,P00289,20,Male,Fever,Critical,08:53,D123,155
+S0290,D111,Doctor_D111,Pediatrics,H024,Hospital_24,Area_14,District_1,Private,272,98,40,2026-03-19,Evening,14:00,20:00,Leave,P00290,85,Male,Skin Allergy,Low,10:59,D111,21
+S0291,D033,Doctor_D033,ENT,H009,Hospital_9,Area_25,District_8,Private,287,10,31,2026-03-16,Evening,14:00,20:00,Emergency Duty,P00291,85,Female,Skin Allergy,Critical,16:38,D033,68
+S0292,D114,Doctor_D114,Dermatology,H021,Hospital_21,Area_13,District_9,Private,293,152,27,2026-03-13,Evening,14:00,20:00,Emergency Duty,P00292,30,Female,Ear Infection,Low,14:53,D114,51
+S0293,D089,Doctor_D089,Gynecology,H038,Hospital_38,Area_15,District_9,Rural Center,159,144,19,2026-03-19,Morning,08:00,14:00,Leave,P00293,8,Female,Heart Disease,Critical,08:26,D089,170
+S0294,D060,Doctor_D060,Radiology,H003,Hospital_3,Area_4,District_8,Government,278,104,32,2026-03-03,Evening,14:00,20:00,Leave,P00294,87,Male,Asthma,Critical,13:59,D060,139
+S0295,D086,Doctor_D086,Orthopedics,H022,Hospital_22,Area_15,District_5,Rural Center,190,160,5,2026-03-14,Morning,08:00,14:00,Emergency Duty,P00295,40,Female,Infection,Medium,17:45,D086,103
+S0296,D008,Doctor_D008,Cardiology,H032,Hospital_32,Area_6,District_5,Rural Center,293,48,22,2026-03-10,Night,20:00,08:00,Leave,P00296,4,Male,Diabetes,Critical,12:20,D008,136
+S0297,D047,Doctor_D047,Cardiology,H035,Hospital_35,Area_14,District_4,Private,77,69,37,2026-03-06,Morning,08:00,14:00,Leave,P00297,48,Female,Migraine,Critical,13:00,D047,125
+S0298,D027,Doctor_D027,Emergency,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-03,Night,20:00,08:00,Emergency Duty,P00298,5,Male,Fever,Medium,16:20,D027,14
+S0299,D069,Doctor_D069,Radiology,H028,Hospital_28,Area_18,District_10,Government,270,28,40,2026-03-16,Evening,14:00,20:00,Emergency Duty,P00299,88,Female,Fever,Medium,11:00,D069,92
+S0300,D061,Doctor_D061,General Medicine,H028,Hospital_28,Area_18,District_10,Government,270,28,40,2026-03-01,Morning,08:00,14:00,Leave,P00300,66,Male,Skin Allergy,Low,13:54,D061,50
+S0301,D060,Doctor_D060,General Medicine,H039,Hospital_39,Area_21,District_9,Private,107,139,6,2026-03-06,Morning,08:00,14:00,Leave,P00301,1,Female,Pregnancy,Critical,14:44,D060,139
+S0302,D042,Doctor_D042,Pediatrics,H008,Hospital_8,Area_16,District_9,Government,138,64,19,2026-03-09,Morning,08:00,14:00,Emergency Duty,P00302,67,Female,Infection,Low,15:12,D042,159
+S0303,D097,Doctor_D097,Radiology,H010,Hospital_10,Area_18,District_2,Government,211,190,23,2026-03-14,Evening,14:00,20:00,Leave,P00303,57,Female,Ear Infection,Low,14:48,D097,25
+S0304,D121,Doctor_D121,Orthopedics,H010,Hospital_10,Area_18,District_2,Government,211,190,23,2026-03-14,Night,20:00,08:00,Available,P00304,70,Male,Asthma,Medium,15:09,D121,128
+S0305,D074,Doctor_D074,Gynecology,H007,Hospital_7,Area_14,District_1,Rural Center,106,200,33,2026-03-18,Evening,14:00,20:00,Leave,P00305,37,Male,Diabetes,Critical,15:47,D074,144
+S0306,D136,Doctor_D136,General Medicine,H039,Hospital_39,Area_21,District_9,Private,107,139,6,2026-03-03,Morning,08:00,14:00,Leave,P00306,50,Male,Asthma,Critical,12:31,D136,69
+S0307,D126,Doctor_D126,ENT,H017,Hospital_17,Area_17,District_7,Private,175,192,6,2026-03-04,Morning,08:00,14:00,Available,P00307,20,Male,Skin Allergy,Low,10:43,D126,49
+S0308,D018,Doctor_D018,Radiology,H010,Hospital_10,Area_18,District_2,Government,211,190,23,2026-03-21,Morning,08:00,14:00,Leave,P00308,4,Male,Asthma,Low,15:59,D018,140
+S0309,D121,Doctor_D121,Dermatology,H035,Hospital_35,Area_14,District_4,Private,77,69,37,2026-03-20,Night,20:00,08:00,Leave,P00309,15,Female,Diabetes,Medium,11:32,D121,172
+S0310,D100,Doctor_D100,Pediatrics,H026,Hospital_26,Area_12,District_1,Rural Center,188,164,26,2026-03-15,Evening,14:00,20:00,Emergency Duty,P00310,45,Female,Skin Allergy,Critical,09:24,D100,116
+S0311,D069,Doctor_D069,General Medicine,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-11,Morning,08:00,14:00,Leave,P00311,49,Male,Ear Infection,Medium,10:34,D069,152
+S0312,D046,Doctor_D046,Radiology,H025,Hospital_25,Area_7,District_9,Private,174,96,31,2026-03-07,Morning,08:00,14:00,Leave,P00312,30,Female,Ear Infection,Critical,09:57,D046,165
+S0313,D042,Doctor_D042,Orthopedics,H029,Hospital_29,Area_9,District_1,Rural Center,68,26,6,2026-03-05,Morning,08:00,14:00,Emergency Duty,P00313,52,Female,Migraine,Medium,13:06,D042,13
+S0314,D137,Doctor_D137,Dermatology,H006,Hospital_6,Area_21,District_9,Government,290,102,18,2026-03-08,Morning,08:00,14:00,Available,P00314,28,Female,Migraine,Critical,08:24,D137,155
+S0315,D070,Doctor_D070,ENT,H008,Hospital_8,Area_16,District_9,Government,138,64,19,2026-03-11,Evening,14:00,20:00,Available,P00315,76,Male,Fracture,Critical,13:46,D070,125
+S0316,D046,Doctor_D046,Cardiology,H026,Hospital_26,Area_12,District_1,Rural Center,188,164,26,2026-03-01,Morning,08:00,14:00,Available,P00316,36,Male,Migraine,Medium,08:08,D046,143
+S0317,D131,Doctor_D131,Radiology,H033,Hospital_33,Area_21,District_5,Private,229,87,36,2026-03-13,Evening,14:00,20:00,Available,P00317,51,Female,Infection,Low,12:30,D131,85
+S0318,D035,Doctor_D035,Gynecology,H010,Hospital_10,Area_18,District_2,Government,211,190,23,2026-03-21,Night,20:00,08:00,Available,P00318,38,Female,Fever,Critical,08:27,D035,163
+S0319,D113,Doctor_D113,General Medicine,H009,Hospital_9,Area_25,District_8,Private,287,10,31,2026-03-18,Evening,14:00,20:00,Leave,P00319,51,Male,Ear Infection,Critical,17:58,D113,119
+S0320,D025,Doctor_D025,Cardiology,H010,Hospital_10,Area_18,District_2,Government,211,190,23,2026-03-19,Evening,14:00,20:00,Available,P00320,2,Female,Diabetes,Low,14:55,D025,108
+S0321,D011,Doctor_D011,Radiology,H018,Hospital_18,Area_16,District_1,Private,230,162,30,2026-03-20,Morning,08:00,14:00,Leave,P00321,83,Male,Ear Infection,Medium,12:52,D011,80
+S0322,D150,Doctor_D150,General Medicine,H014,Hospital_14,Area_16,District_4,Rural Center,254,108,31,2026-03-13,Night,20:00,08:00,Emergency Duty,P00322,76,Female,Fracture,Medium,12:22,D150,48
+S0323,D117,Doctor_D117,Radiology,H033,Hospital_33,Area_21,District_5,Private,229,87,36,2026-03-05,Evening,14:00,20:00,Emergency Duty,P00323,83,Male,Ear Infection,Critical,17:51,D117,162
+S0324,D101,Doctor_D101,ENT,H019,Hospital_19,Area_21,District_3,Government,178,63,5,2026-03-02,Evening,14:00,20:00,Emergency Duty,P00324,38,Male,Asthma,Medium,14:41,D101,75
+S0325,D032,Doctor_D032,Cardiology,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-04,Evening,14:00,20:00,Leave,P00325,20,Female,Infection,Low,08:09,D032,15
+S0326,D058,Doctor_D058,Cardiology,H018,Hospital_18,Area_16,District_1,Private,230,162,30,2026-03-02,Morning,08:00,14:00,Emergency Duty,P00326,85,Male,Fever,Medium,09:50,D058,111
+S0327,D038,Doctor_D038,General Medicine,H021,Hospital_21,Area_13,District_9,Private,293,152,27,2026-03-13,Evening,14:00,20:00,Emergency Duty,P00327,80,Male,Fracture,Critical,09:56,D038,151
+S0328,D126,Doctor_D126,Emergency,H010,Hospital_10,Area_18,District_2,Government,211,190,23,2026-03-13,Morning,08:00,14:00,Emergency Duty,P00328,73,Male,Diabetes,Critical,14:00,D126,23
+S0329,D013,Doctor_D013,Neurology,H004,Hospital_4,Area_20,District_1,Rural Center,164,73,19,2026-03-04,Morning,08:00,14:00,Leave,P00329,12,Male,Fever,Critical,17:49,D013,76
+S0330,D141,Doctor_D141,ENT,H007,Hospital_7,Area_14,District_1,Rural Center,106,200,33,2026-03-13,Evening,14:00,20:00,Available,P00330,83,Male,Asthma,Critical,12:20,D141,175
+S0331,D033,Doctor_D033,General Medicine,H030,Hospital_30,Area_15,District_1,Private,113,73,12,2026-03-12,Night,20:00,08:00,Emergency Duty,P00331,58,Male,Skin Allergy,Critical,16:33,D033,44
+S0332,D071,Doctor_D071,Neurology,H015,Hospital_15,Area_22,District_3,Private,190,184,28,2026-03-07,Morning,08:00,14:00,Leave,P00332,80,Male,Pregnancy,Low,14:22,D071,162
+S0333,D002,Doctor_D002,Dermatology,H023,Hospital_23,Area_13,District_9,Government,182,148,18,2026-03-21,Morning,08:00,14:00,Available,P00333,53,Female,Skin Allergy,Critical,16:14,D002,117
+S0334,D029,Doctor_D029,Radiology,H002,Hospital_2,Area_25,District_8,Private,216,102,18,2026-03-10,Evening,14:00,20:00,Emergency Duty,P00334,66,Female,Infection,Low,08:54,D029,63
+S0335,D062,Doctor_D062,Neurology,H033,Hospital_33,Area_21,District_5,Private,229,87,36,2026-03-01,Evening,14:00,20:00,Leave,P00335,65,Male,Skin Allergy,Medium,13:55,D062,28
+S0336,D133,Doctor_D133,Pediatrics,H001,Hospital_1,Area_5,District_10,Government,115,35,36,2026-03-04,Evening,14:00,20:00,Leave,P00336,52,Male,Heart Disease,Critical,09:42,D133,117
+S0337,D133,Doctor_D133,Orthopedics,H017,Hospital_17,Area_17,District_7,Private,175,192,6,2026-03-07,Night,20:00,08:00,Leave,P00337,47,Female,Diabetes,Critical,11:41,D133,69
+S0338,D146,Doctor_D146,Pediatrics,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-09,Morning,08:00,14:00,Leave,P00338,77,Male,Diabetes,Low,08:31,D146,49
+S0339,D052,Doctor_D052,Cardiology,H010,Hospital_10,Area_18,District_2,Government,211,190,23,2026-03-14,Evening,14:00,20:00,Emergency Duty,P00339,48,Female,Infection,Low,11:55,D052,6
+S0340,D101,Doctor_D101,Dermatology,H029,Hospital_29,Area_9,District_1,Rural Center,68,26,6,2026-03-14,Evening,14:00,20:00,Leave,P00340,76,Female,Skin Allergy,Critical,17:46,D101,75
+S0341,D091,Doctor_D091,Gynecology,H017,Hospital_17,Area_17,District_7,Private,175,192,6,2026-03-08,Night,20:00,08:00,Emergency Duty,P00341,61,Female,Asthma,Critical,09:16,D091,12
+S0342,D028,Doctor_D028,General Medicine,H031,Hospital_31,Area_20,District_3,Private,124,22,15,2026-03-06,Night,20:00,08:00,Emergency Duty,P00342,29,Female,Asthma,Medium,17:03,D028,107
+S0343,D002,Doctor_D002,Orthopedics,H001,Hospital_1,Area_5,District_10,Government,115,35,36,2026-03-19,Morning,08:00,14:00,Available,P00343,61,Female,Migraine,Low,14:46,D002,109
+S0344,D043,Doctor_D043,Pediatrics,H030,Hospital_30,Area_15,District_1,Private,113,73,12,2026-03-21,Night,20:00,08:00,Leave,P00344,72,Male,Asthma,Medium,16:24,D043,40
+S0345,D065,Doctor_D065,Neurology,H020,Hospital_20,Area_25,District_4,Rural Center,285,145,19,2026-03-16,Night,20:00,08:00,Available,P00345,56,Female,Pregnancy,Medium,16:46,D065,58
+S0346,D072,Doctor_D072,Radiology,H016,Hospital_16,Area_3,District_8,Rural Center,180,32,15,2026-03-19,Morning,08:00,14:00,Leave,P00346,64,Female,Asthma,Low,13:18,D072,79
+S0347,D068,Doctor_D068,Neurology,H009,Hospital_9,Area_25,District_8,Private,287,10,31,2026-03-13,Evening,14:00,20:00,Emergency Duty,P00347,57,Female,Fracture,Medium,10:32,D068,15
+S0348,D024,Doctor_D024,Dermatology,H019,Hospital_19,Area_21,District_3,Government,178,63,5,2026-03-02,Night,20:00,08:00,Emergency Duty,P00348,40,Male,Skin Allergy,Low,11:30,D024,163
+S0349,D083,Doctor_D083,Dermatology,H010,Hospital_10,Area_18,District_2,Government,211,190,23,2026-03-08,Morning,08:00,14:00,Emergency Duty,P00349,46,Female,Infection,Critical,08:10,D083,26
+S0350,D009,Doctor_D009,ENT,H002,Hospital_2,Area_25,District_8,Private,216,102,18,2026-03-01,Evening,14:00,20:00,Available,P00350,36,Male,Skin Allergy,Medium,08:19,D009,166
+S0351,D043,Doctor_D043,ENT,H013,Hospital_13,Area_19,District_8,Rural Center,150,155,7,2026-03-13,Morning,08:00,14:00,Emergency Duty,P00351,88,Male,Skin Allergy,Medium,08:39,D043,116
+S0352,D013,Doctor_D013,Gynecology,H019,Hospital_19,Area_21,District_3,Government,178,63,5,2026-03-19,Morning,08:00,14:00,Emergency Duty,P00352,63,Male,Ear Infection,Critical,13:41,D013,177
+S0353,D023,Doctor_D023,Orthopedics,H008,Hospital_8,Area_16,District_9,Government,138,64,19,2026-03-08,Evening,14:00,20:00,Emergency Duty,P00353,63,Male,Skin Allergy,Critical,14:54,D023,106
+S0354,D056,Doctor_D056,Neurology,H007,Hospital_7,Area_14,District_1,Rural Center,106,200,33,2026-03-02,Evening,14:00,20:00,Leave,P00354,11,Male,Ear Infection,Medium,08:01,D056,119
+S0355,D112,Doctor_D112,Neurology,H038,Hospital_38,Area_15,District_9,Rural Center,159,144,19,2026-03-02,Evening,14:00,20:00,Leave,P00355,23,Female,Pregnancy,Low,09:42,D112,37
+S0356,D011,Doctor_D011,Radiology,H024,Hospital_24,Area_14,District_1,Private,272,98,40,2026-03-01,Night,20:00,08:00,Emergency Duty,P00356,65,Female,Fever,Critical,14:48,D011,102
+S0357,D088,Doctor_D088,Orthopedics,H026,Hospital_26,Area_12,District_1,Rural Center,188,164,26,2026-03-20,Morning,08:00,14:00,Emergency Duty,P00357,26,Male,Fracture,Critical,12:22,D088,179
+S0358,D148,Doctor_D148,Radiology,H003,Hospital_3,Area_4,District_8,Government,278,104,32,2026-03-19,Night,20:00,08:00,Emergency Duty,P00358,3,Male,Skin Allergy,Critical,14:26,D148,9
+S0359,D002,Doctor_D002,Emergency,H016,Hospital_16,Area_3,District_8,Rural Center,180,32,15,2026-03-06,Night,20:00,08:00,Available,P00359,51,Female,Infection,Low,15:05,D002,61
+S0360,D024,Doctor_D024,Radiology,H015,Hospital_15,Area_22,District_3,Private,190,184,28,2026-03-18,Night,20:00,08:00,Leave,P00360,86,Female,Infection,Critical,15:42,D024,157
+S0361,D066,Doctor_D066,Neurology,H013,Hospital_13,Area_19,District_8,Rural Center,150,155,7,2026-03-20,Evening,14:00,20:00,Leave,P00361,19,Female,Diabetes,Critical,12:13,D066,75
+S0362,D129,Doctor_D129,Pediatrics,H003,Hospital_3,Area_4,District_8,Government,278,104,32,2026-03-18,Night,20:00,08:00,Emergency Duty,P00362,3,Male,Infection,Medium,11:44,D129,48
+S0363,D083,Doctor_D083,General Medicine,H039,Hospital_39,Area_21,District_9,Private,107,139,6,2026-03-20,Morning,08:00,14:00,Available,P00363,50,Female,Asthma,Low,10:46,D083,167
+S0364,D067,Doctor_D067,General Medicine,H016,Hospital_16,Area_3,District_8,Rural Center,180,32,15,2026-03-05,Evening,14:00,20:00,Emergency Duty,P00364,64,Female,Asthma,Medium,08:42,D067,108
+S0365,D092,Doctor_D092,Neurology,H015,Hospital_15,Area_22,District_3,Private,190,184,28,2026-03-09,Night,20:00,08:00,Leave,P00365,62,Male,Ear Infection,Medium,11:22,D092,41
+S0366,D100,Doctor_D100,Neurology,H024,Hospital_24,Area_14,District_1,Private,272,98,40,2026-03-03,Morning,08:00,14:00,Leave,P00366,27,Female,Asthma,Low,09:13,D100,73
+S0367,D087,Doctor_D087,Gynecology,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-14,Morning,08:00,14:00,Leave,P00367,47,Female,Infection,Critical,16:27,D087,115
+S0368,D101,Doctor_D101,Cardiology,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-06,Evening,14:00,20:00,Emergency Duty,P00368,44,Female,Ear Infection,Medium,09:38,D101,102
+S0369,D032,Doctor_D032,Gynecology,H037,Hospital_37,Area_1,District_7,Government,59,189,15,2026-03-20,Evening,14:00,20:00,Available,P00369,15,Male,Migraine,Medium,08:53,D032,49
+S0370,D035,Doctor_D035,Dermatology,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-11,Morning,08:00,14:00,Emergency Duty,P00370,57,Male,Skin Allergy,Critical,09:38,D035,128
+S0371,D145,Doctor_D145,Radiology,H019,Hospital_19,Area_21,District_3,Government,178,63,5,2026-03-07,Morning,08:00,14:00,Emergency Duty,P00371,32,Male,Heart Disease,Medium,08:38,D145,147
+S0372,D004,Doctor_D004,Neurology,H007,Hospital_7,Area_14,District_1,Rural Center,106,200,33,2026-03-07,Morning,08:00,14:00,Available,P00372,40,Male,Fracture,Low,14:20,D004,45
+S0373,D108,Doctor_D108,Cardiology,H030,Hospital_30,Area_15,District_1,Private,113,73,12,2026-03-07,Evening,14:00,20:00,Available,P00373,78,Female,Infection,Medium,10:13,D108,143
+S0374,D126,Doctor_D126,ENT,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-08,Morning,08:00,14:00,Available,P00374,10,Male,Infection,Low,09:05,D126,161
+S0375,D038,Doctor_D038,Cardiology,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-19,Night,20:00,08:00,Leave,P00375,11,Female,Pregnancy,Medium,12:25,D038,50
+S0376,D146,Doctor_D146,Radiology,H005,Hospital_5,Area_19,District_2,Private,57,10,6,2026-03-19,Evening,14:00,20:00,Emergency Duty,P00376,72,Male,Fracture,Critical,15:23,D146,155
+S0377,D031,Doctor_D031,Dermatology,H005,Hospital_5,Area_19,District_2,Private,57,10,6,2026-03-08,Evening,14:00,20:00,Leave,P00377,87,Female,Diabetes,Critical,15:18,D031,150
+S0378,D047,Doctor_D047,Dermatology,H007,Hospital_7,Area_14,District_1,Rural Center,106,200,33,2026-03-20,Morning,08:00,14:00,Leave,P00378,21,Female,Ear Infection,Medium,08:49,D047,95
+S0379,D040,Doctor_D040,Radiology,H007,Hospital_7,Area_14,District_1,Rural Center,106,200,33,2026-03-16,Evening,14:00,20:00,Emergency Duty,P00379,37,Male,Fracture,Critical,11:25,D040,61
+S0380,D073,Doctor_D073,Pediatrics,H017,Hospital_17,Area_17,District_7,Private,175,192,6,2026-03-14,Morning,08:00,14:00,Emergency Duty,P00380,28,Female,Migraine,Critical,09:30,D073,20
+S0381,D097,Doctor_D097,Neurology,H002,Hospital_2,Area_25,District_8,Private,216,102,18,2026-03-10,Morning,08:00,14:00,Emergency Duty,P00381,27,Female,Fever,Medium,08:54,D097,88
+S0382,D108,Doctor_D108,Orthopedics,H016,Hospital_16,Area_3,District_8,Rural Center,180,32,15,2026-03-17,Morning,08:00,14:00,Available,P00382,49,Male,Fever,Critical,09:47,D108,131
+S0383,D125,Doctor_D125,Gynecology,H005,Hospital_5,Area_19,District_2,Private,57,10,6,2026-03-01,Evening,14:00,20:00,Emergency Duty,P00383,77,Female,Skin Allergy,Low,17:22,D125,137
+S0384,D003,Doctor_D003,Pediatrics,H031,Hospital_31,Area_20,District_3,Private,124,22,15,2026-03-21,Night,20:00,08:00,Leave,P00384,5,Male,Migraine,Critical,08:44,D003,50
+S0385,D116,Doctor_D116,Neurology,H012,Hospital_12,Area_14,District_9,Rural Center,98,82,23,2026-03-17,Morning,08:00,14:00,Leave,P00385,89,Male,Pregnancy,Low,10:27,D116,23
+S0386,D099,Doctor_D099,Pediatrics,H016,Hospital_16,Area_3,District_8,Rural Center,180,32,15,2026-03-02,Evening,14:00,20:00,Emergency Duty,P00386,53,Male,Migraine,Low,14:15,D099,48
+S0387,D061,Doctor_D061,Dermatology,H026,Hospital_26,Area_12,District_1,Rural Center,188,164,26,2026-03-21,Morning,08:00,14:00,Emergency Duty,P00387,39,Female,Ear Infection,Critical,17:02,D061,134
+S0388,D061,Doctor_D061,Cardiology,H022,Hospital_22,Area_15,District_5,Rural Center,190,160,5,2026-03-19,Morning,08:00,14:00,Available,P00388,5,Female,Heart Disease,Critical,12:48,D061,171
+S0389,D046,Doctor_D046,Cardiology,H007,Hospital_7,Area_14,District_1,Rural Center,106,200,33,2026-03-14,Evening,14:00,20:00,Emergency Duty,P00389,18,Male,Fracture,Medium,17:13,D046,175
+S0390,D092,Doctor_D092,Gynecology,H025,Hospital_25,Area_7,District_9,Private,174,96,31,2026-03-15,Evening,14:00,20:00,Available,P00390,51,Female,Fever,Medium,11:15,D092,59
+S0391,D150,Doctor_D150,General Medicine,H034,Hospital_34,Area_16,District_2,Government,129,103,26,2026-03-04,Evening,14:00,20:00,Leave,P00391,52,Female,Fracture,Medium,14:23,D150,171
+S0392,D057,Doctor_D057,Dermatology,H014,Hospital_14,Area_16,District_4,Rural Center,254,108,31,2026-03-07,Night,20:00,08:00,Available,P00392,7,Male,Fracture,Critical,13:37,D057,123
+S0393,D084,Doctor_D084,Neurology,H022,Hospital_22,Area_15,District_5,Rural Center,190,160,5,2026-03-19,Night,20:00,08:00,Emergency Duty,P00393,35,Male,Infection,Low,08:37,D084,38
+S0394,D106,Doctor_D106,ENT,H020,Hospital_20,Area_25,District_4,Rural Center,285,145,19,2026-03-02,Evening,14:00,20:00,Leave,P00394,15,Female,Skin Allergy,Low,12:36,D106,63
+S0395,D133,Doctor_D133,Emergency,H026,Hospital_26,Area_12,District_1,Rural Center,188,164,26,2026-03-09,Night,20:00,08:00,Available,P00395,1,Male,Migraine,Critical,15:26,D133,43
+S0396,D090,Doctor_D090,Radiology,H004,Hospital_4,Area_20,District_1,Rural Center,164,73,19,2026-03-21,Morning,08:00,14:00,Emergency Duty,P00396,20,Male,Skin Allergy,Low,12:13,D090,161
+S0397,D085,Doctor_D085,Orthopedics,H012,Hospital_12,Area_14,District_9,Rural Center,98,82,23,2026-03-20,Morning,08:00,14:00,Emergency Duty,P00397,15,Male,Fever,Critical,10:12,D085,76
+S0398,D070,Doctor_D070,Orthopedics,H025,Hospital_25,Area_7,District_9,Private,174,96,31,2026-03-01,Evening,14:00,20:00,Available,P00398,59,Female,Skin Allergy,Medium,08:07,D070,180
+S0399,D035,Doctor_D035,Dermatology,H010,Hospital_10,Area_18,District_2,Government,211,190,23,2026-03-15,Evening,14:00,20:00,Leave,P00399,38,Female,Fracture,Medium,15:16,D035,7
+S0400,D080,Doctor_D080,ENT,H006,Hospital_6,Area_21,District_9,Government,290,102,18,2026-03-02,Morning,08:00,14:00,Available,P00400,11,Female,Fever,Critical,08:54,D080,67
+S0401,D034,Doctor_D034,Emergency,H019,Hospital_19,Area_21,District_3,Government,178,63,5,2026-03-13,Night,20:00,08:00,Available,P00401,76,Female,Fracture,Critical,14:41,D034,60
+S0402,D042,Doctor_D042,Dermatology,H039,Hospital_39,Area_21,District_9,Private,107,139,6,2026-03-03,Morning,08:00,14:00,Available,P00402,72,Male,Infection,Medium,13:38,D042,148
+S0403,D138,Doctor_D138,Gynecology,H002,Hospital_2,Area_25,District_8,Private,216,102,18,2026-03-19,Evening,14:00,20:00,Leave,P00403,22,Male,Ear Infection,Low,09:24,D138,95
+S0404,D048,Doctor_D048,Emergency,H034,Hospital_34,Area_16,District_2,Government,129,103,26,2026-03-03,Night,20:00,08:00,Leave,P00404,56,Male,Heart Disease,Low,16:25,D048,175
+S0405,D065,Doctor_D065,Dermatology,H016,Hospital_16,Area_3,District_8,Rural Center,180,32,15,2026-03-19,Evening,14:00,20:00,Leave,P00405,56,Male,Infection,Medium,14:41,D065,93
+S0406,D135,Doctor_D135,Dermatology,H035,Hospital_35,Area_14,District_4,Private,77,69,37,2026-03-04,Night,20:00,08:00,Leave,P00406,43,Male,Infection,Medium,16:29,D135,110
+S0407,D036,Doctor_D036,Radiology,H038,Hospital_38,Area_15,District_9,Rural Center,159,144,19,2026-03-20,Morning,08:00,14:00,Available,P00407,21,Female,Fever,Critical,12:44,D036,33
+S0408,D069,Doctor_D069,Orthopedics,H023,Hospital_23,Area_13,District_9,Government,182,148,18,2026-03-21,Night,20:00,08:00,Emergency Duty,P00408,58,Male,Migraine,Medium,09:54,D069,18
+S0409,D037,Doctor_D037,Radiology,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-10,Evening,14:00,20:00,Emergency Duty,P00409,49,Male,Ear Infection,Medium,14:08,D037,38
+S0410,D131,Doctor_D131,ENT,H025,Hospital_25,Area_7,District_9,Private,174,96,31,2026-03-03,Morning,08:00,14:00,Emergency Duty,P00410,47,Male,Fever,Critical,15:18,D131,57
+S0411,D049,Doctor_D049,Pediatrics,H014,Hospital_14,Area_16,District_4,Rural Center,254,108,31,2026-03-08,Morning,08:00,14:00,Emergency Duty,P00411,68,Female,Pregnancy,Medium,13:55,D049,47
+S0412,D061,Doctor_D061,Radiology,H034,Hospital_34,Area_16,District_2,Government,129,103,26,2026-03-18,Morning,08:00,14:00,Available,P00412,84,Male,Pregnancy,Low,11:44,D061,11
+S0413,D037,Doctor_D037,Pediatrics,H022,Hospital_22,Area_15,District_5,Rural Center,190,160,5,2026-03-12,Night,20:00,08:00,Leave,P00413,18,Male,Asthma,Medium,12:32,D037,96
+S0414,D011,Doctor_D011,ENT,H028,Hospital_28,Area_18,District_10,Government,270,28,40,2026-03-02,Night,20:00,08:00,Emergency Duty,P00414,82,Female,Asthma,Medium,09:03,D011,177
+S0415,D100,Doctor_D100,ENT,H035,Hospital_35,Area_14,District_4,Private,77,69,37,2026-03-10,Evening,14:00,20:00,Emergency Duty,P00415,16,Male,Heart Disease,Medium,14:34,D100,23
+S0416,D054,Doctor_D054,Pediatrics,H003,Hospital_3,Area_4,District_8,Government,278,104,32,2026-03-16,Morning,08:00,14:00,Available,P00416,28,Female,Infection,Medium,08:09,D054,78
+S0417,D120,Doctor_D120,Emergency,H002,Hospital_2,Area_25,District_8,Private,216,102,18,2026-03-17,Evening,14:00,20:00,Available,P00417,90,Female,Skin Allergy,Low,17:31,D120,12
+S0418,D019,Doctor_D019,Pediatrics,H034,Hospital_34,Area_16,District_2,Government,129,103,26,2026-03-10,Evening,14:00,20:00,Leave,P00418,24,Female,Skin Allergy,Critical,15:40,D019,123
+S0419,D057,Doctor_D057,General Medicine,H029,Hospital_29,Area_9,District_1,Rural Center,68,26,6,2026-03-10,Morning,08:00,14:00,Leave,P00419,61,Female,Diabetes,Low,16:25,D057,156
+S0420,D031,Doctor_D031,Gynecology,H036,Hospital_36,Area_7,District_10,Private,259,10,19,2026-03-07,Morning,08:00,14:00,Leave,P00420,8,Male,Skin Allergy,Medium,15:37,D031,100
+S0421,D135,Doctor_D135,Radiology,H033,Hospital_33,Area_21,District_5,Private,229,87,36,2026-03-06,Morning,08:00,14:00,Available,P00421,75,Male,Pregnancy,Critical,09:09,D135,124
+S0422,D080,Doctor_D080,Orthopedics,H008,Hospital_8,Area_16,District_9,Government,138,64,19,2026-03-01,Evening,14:00,20:00,Emergency Duty,P00422,58,Female,Ear Infection,Medium,16:06,D080,116
+S0423,D094,Doctor_D094,Pediatrics,H018,Hospital_18,Area_16,District_1,Private,230,162,30,2026-03-15,Morning,08:00,14:00,Emergency Duty,P00423,61,Female,Ear Infection,Medium,12:36,D094,77
+S0424,D071,Doctor_D071,Cardiology,H009,Hospital_9,Area_25,District_8,Private,287,10,31,2026-03-11,Evening,14:00,20:00,Leave,P00424,88,Female,Pregnancy,Low,09:07,D071,135
+S0425,D082,Doctor_D082,Orthopedics,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-09,Morning,08:00,14:00,Emergency Duty,P00425,32,Female,Fever,Critical,10:38,D082,114
+S0426,D102,Doctor_D102,Cardiology,H014,Hospital_14,Area_16,District_4,Rural Center,254,108,31,2026-03-03,Morning,08:00,14:00,Available,P00426,60,Female,Infection,Medium,10:19,D102,159
+S0427,D101,Doctor_D101,Neurology,H004,Hospital_4,Area_20,District_1,Rural Center,164,73,19,2026-03-05,Evening,14:00,20:00,Available,P00427,56,Female,Asthma,Critical,08:08,D101,112
+S0428,D142,Doctor_D142,Cardiology,H022,Hospital_22,Area_15,District_5,Rural Center,190,160,5,2026-03-06,Morning,08:00,14:00,Emergency Duty,P00428,63,Female,Heart Disease,Low,10:32,D142,96
+S0429,D082,Doctor_D082,Neurology,H033,Hospital_33,Area_21,District_5,Private,229,87,36,2026-03-15,Evening,14:00,20:00,Available,P00429,45,Female,Pregnancy,Critical,08:36,D082,59
+S0430,D068,Doctor_D068,Orthopedics,H025,Hospital_25,Area_7,District_9,Private,174,96,31,2026-03-10,Night,20:00,08:00,Emergency Duty,P00430,44,Male,Fever,Low,12:40,D068,38
+S0431,D099,Doctor_D099,ENT,H003,Hospital_3,Area_4,District_8,Government,278,104,32,2026-03-06,Evening,14:00,20:00,Leave,P00431,4,Female,Fever,Critical,13:47,D099,168
+S0432,D146,Doctor_D146,Radiology,H003,Hospital_3,Area_4,District_8,Government,278,104,32,2026-03-15,Morning,08:00,14:00,Available,P00432,80,Female,Heart Disease,Low,15:10,D146,152
+S0433,D146,Doctor_D146,Cardiology,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-16,Morning,08:00,14:00,Available,P00433,46,Male,Skin Allergy,Medium,14:32,D146,143
+S0434,D082,Doctor_D082,Orthopedics,H023,Hospital_23,Area_13,District_9,Government,182,148,18,2026-03-16,Morning,08:00,14:00,Leave,P00434,33,Female,Pregnancy,Low,08:08,D082,111
+S0435,D116,Doctor_D116,Neurology,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-03,Night,20:00,08:00,Available,P00435,55,Male,Diabetes,Low,16:48,D116,26
+S0436,D117,Doctor_D117,Emergency,H029,Hospital_29,Area_9,District_1,Rural Center,68,26,6,2026-03-20,Evening,14:00,20:00,Leave,P00436,85,Male,Infection,Critical,09:53,D117,86
+S0437,D041,Doctor_D041,Cardiology,H012,Hospital_12,Area_14,District_9,Rural Center,98,82,23,2026-03-07,Morning,08:00,14:00,Emergency Duty,P00437,38,Male,Migraine,Critical,13:38,D041,123
+S0438,D129,Doctor_D129,Dermatology,H031,Hospital_31,Area_20,District_3,Private,124,22,15,2026-03-17,Evening,14:00,20:00,Emergency Duty,P00438,68,Female,Fracture,Critical,14:35,D129,41
+S0439,D001,Doctor_D001,Orthopedics,H017,Hospital_17,Area_17,District_7,Private,175,192,6,2026-03-21,Morning,08:00,14:00,Emergency Duty,P00439,20,Male,Fracture,Critical,13:15,D001,67
+S0440,D118,Doctor_D118,ENT,H002,Hospital_2,Area_25,District_8,Private,216,102,18,2026-03-17,Morning,08:00,14:00,Emergency Duty,P00440,50,Female,Ear Infection,Critical,09:26,D118,113
+S0441,D140,Doctor_D140,Gynecology,H012,Hospital_12,Area_14,District_9,Rural Center,98,82,23,2026-03-16,Night,20:00,08:00,Leave,P00441,62,Male,Infection,Medium,16:36,D140,14
+S0442,D071,Doctor_D071,ENT,H008,Hospital_8,Area_16,District_9,Government,138,64,19,2026-03-07,Night,20:00,08:00,Available,P00442,50,Female,Fever,Medium,10:23,D071,62
+S0443,D040,Doctor_D040,ENT,H003,Hospital_3,Area_4,District_8,Government,278,104,32,2026-03-11,Evening,14:00,20:00,Available,P00443,77,Male,Ear Infection,Medium,17:42,D040,176
+S0444,D019,Doctor_D019,General Medicine,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-03,Morning,08:00,14:00,Available,P00444,17,Female,Fever,Low,08:00,D019,115
+S0445,D087,Doctor_D087,Dermatology,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-07,Night,20:00,08:00,Emergency Duty,P00445,21,Female,Heart Disease,Medium,12:45,D087,34
+S0446,D109,Doctor_D109,Radiology,H001,Hospital_1,Area_5,District_10,Government,115,35,36,2026-03-04,Evening,14:00,20:00,Available,P00446,85,Male,Fracture,Medium,13:41,D109,158
+S0447,D055,Doctor_D055,Orthopedics,H023,Hospital_23,Area_13,District_9,Government,182,148,18,2026-03-15,Morning,08:00,14:00,Emergency Duty,P00447,4,Female,Ear Infection,Medium,09:09,D055,173
+S0448,D080,Doctor_D080,General Medicine,H005,Hospital_5,Area_19,District_2,Private,57,10,6,2026-03-02,Morning,08:00,14:00,Leave,P00448,21,Male,Ear Infection,Medium,15:43,D080,11
+S0449,D038,Doctor_D038,Pediatrics,H026,Hospital_26,Area_12,District_1,Rural Center,188,164,26,2026-03-09,Evening,14:00,20:00,Emergency Duty,P00449,74,Female,Migraine,Low,09:49,D038,24
+S0450,D034,Doctor_D034,Pediatrics,H037,Hospital_37,Area_1,District_7,Government,59,189,15,2026-03-06,Evening,14:00,20:00,Emergency Duty,P00450,23,Male,Ear Infection,Critical,08:30,D034,122
+S0451,D028,Doctor_D028,Emergency,H010,Hospital_10,Area_18,District_2,Government,211,190,23,2026-03-12,Morning,08:00,14:00,Emergency Duty,P00451,82,Male,Asthma,Low,11:20,D028,25
+S0452,D077,Doctor_D077,Neurology,H033,Hospital_33,Area_21,District_5,Private,229,87,36,2026-03-18,Morning,08:00,14:00,Available,P00452,39,Male,Asthma,Critical,14:25,D077,35
+S0453,D077,Doctor_D077,Pediatrics,H022,Hospital_22,Area_15,District_5,Rural Center,190,160,5,2026-03-15,Night,20:00,08:00,Leave,P00453,82,Male,Fever,Medium,09:42,D077,127
+S0454,D002,Doctor_D002,ENT,H006,Hospital_6,Area_21,District_9,Government,290,102,18,2026-03-12,Evening,14:00,20:00,Available,P00454,27,Female,Pregnancy,Low,16:00,D002,137
+S0455,D137,Doctor_D137,Orthopedics,H031,Hospital_31,Area_20,District_3,Private,124,22,15,2026-03-14,Night,20:00,08:00,Emergency Duty,P00455,26,Female,Migraine,Low,11:51,D137,17
+S0456,D063,Doctor_D063,Cardiology,H034,Hospital_34,Area_16,District_2,Government,129,103,26,2026-03-02,Morning,08:00,14:00,Available,P00456,56,Female,Skin Allergy,Medium,14:11,D063,118
+S0457,D118,Doctor_D118,Dermatology,H009,Hospital_9,Area_25,District_8,Private,287,10,31,2026-03-02,Night,20:00,08:00,Available,P00457,88,Female,Fracture,Critical,15:39,D118,32
+S0458,D107,Doctor_D107,Cardiology,H040,Hospital_40,Area_13,District_10,Private,218,166,32,2026-03-01,Morning,08:00,14:00,Emergency Duty,P00458,83,Male,Infection,Critical,13:35,D107,103
+S0459,D050,Doctor_D050,Dermatology,H006,Hospital_6,Area_21,District_9,Government,290,102,18,2026-03-08,Evening,14:00,20:00,Available,P00459,87,Male,Ear Infection,Medium,13:16,D050,83
+S0460,D047,Doctor_D047,General Medicine,H023,Hospital_23,Area_13,District_9,Government,182,148,18,2026-03-12,Night,20:00,08:00,Emergency Duty,P00460,20,Female,Migraine,Medium,09:57,D047,180
+S0461,D029,Doctor_D029,General Medicine,H022,Hospital_22,Area_15,District_5,Rural Center,190,160,5,2026-03-03,Morning,08:00,14:00,Available,P00461,22,Male,Skin Allergy,Low,13:59,D029,101
+S0462,D103,Doctor_D103,Cardiology,H015,Hospital_15,Area_22,District_3,Private,190,184,28,2026-03-02,Night,20:00,08:00,Emergency Duty,P00462,59,Female,Asthma,Critical,14:00,D103,100
+S0463,D085,Doctor_D085,Cardiology,H021,Hospital_21,Area_13,District_9,Private,293,152,27,2026-03-13,Evening,14:00,20:00,Leave,P00463,35,Male,Pregnancy,Medium,08:11,D085,75
+S0464,D014,Doctor_D014,Gynecology,H014,Hospital_14,Area_16,District_4,Rural Center,254,108,31,2026-03-15,Evening,14:00,20:00,Emergency Duty,P00464,72,Male,Fracture,Critical,13:25,D014,15
+S0465,D103,Doctor_D103,Dermatology,H017,Hospital_17,Area_17,District_7,Private,175,192,6,2026-03-07,Evening,14:00,20:00,Emergency Duty,P00465,15,Male,Skin Allergy,Medium,11:16,D103,149
+S0466,D065,Doctor_D065,Cardiology,H014,Hospital_14,Area_16,District_4,Rural Center,254,108,31,2026-03-09,Night,20:00,08:00,Available,P00466,90,Female,Ear Infection,Low,10:12,D065,121
+S0467,D109,Doctor_D109,Neurology,H027,Hospital_27,Area_15,District_10,Government,255,63,16,2026-03-17,Morning,08:00,14:00,Available,P00467,19,Female,Fever,Medium,10:28,D109,134
+S0468,D127,Doctor_D127,Gynecology,H002,Hospital_2,Area_25,District_8,Private,216,102,18,2026-03-04,Night,20:00,08:00,Emergency Duty,P00468,38,Female,Migraine,Low,08:45,D127,172
+S0469,D137,Doctor_D137,General Medicine,H010,Hospital_10,Area_18,District_2,Government,211,190,23,2026-03-09,Evening,14:00,20:00,Emergency Duty,P00469,8,Female,Asthma,Medium,15:00,D137,134
+S0470,D008,Doctor_D008,General Medicine,H037,Hospital_37,Area_1,District_7,Government,59,189,15,2026-03-07,Morning,08:00,14:00,Leave,P00470,13,Male,Asthma,Critical,17:16,D008,110
+S0471,D134,Doctor_D134,Radiology,H010,Hospital_10,Area_18,District_2,Government,211,190,23,2026-03-16,Morning,08:00,14:00,Emergency Duty,P00471,9,Female,Diabetes,Critical,09:21,D134,43
+S0472,D118,Doctor_D118,Neurology,H009,Hospital_9,Area_25,District_8,Private,287,10,31,2026-03-16,Evening,14:00,20:00,Emergency Duty,P00472,10,Male,Fever,Critical,13:35,D118,27
+S0473,D053,Doctor_D053,ENT,H013,Hospital_13,Area_19,District_8,Rural Center,150,155,7,2026-03-17,Night,20:00,08:00,Available,P00473,23,Male,Skin Allergy,Low,14:12,D053,24
+S0474,D092,Doctor_D092,Neurology,H030,Hospital_30,Area_15,District_1,Private,113,73,12,2026-03-12,Night,20:00,08:00,Leave,P00474,40,Female,Skin Allergy,Medium,13:19,D092,117
+S0475,D095,Doctor_D095,Orthopedics,H024,Hospital_24,Area_14,District_1,Private,272,98,40,2026-03-05,Evening,14:00,20:00,Emergency Duty,P00475,62,Female,Asthma,Medium,15:02,D095,152
+S0476,D121,Doctor_D121,Neurology,H015,Hospital_15,Area_22,District_3,Private,190,184,28,2026-03-17,Night,20:00,08:00,Leave,P00476,45,Female,Fracture,Medium,08:49,D121,42
+S0477,D122,Doctor_D122,Dermatology,H005,Hospital_5,Area_19,District_2,Private,57,10,6,2026-03-03,Morning,08:00,14:00,Emergency Duty,P00477,71,Female,Fracture,Medium,11:58,D122,165
+S0478,D105,Doctor_D105,Pediatrics,H032,Hospital_32,Area_6,District_5,Rural Center,293,48,22,2026-03-20,Evening,14:00,20:00,Available,P00478,84,Female,Diabetes,Low,12:36,D105,72
+S0479,D125,Doctor_D125,ENT,H009,Hospital_9,Area_25,District_8,Private,287,10,31,2026-03-02,Night,20:00,08:00,Leave,P00479,33,Female,Pregnancy,Low,14:42,D125,87
+S0480,D038,Doctor_D038,Cardiology,H018,Hospital_18,Area_16,District_1,Private,230,162,30,2026-03-04,Morning,08:00,14:00,Leave,P00480,19,Female,Pregnancy,Medium,14:30,D038,139
+S0481,D040,Doctor_D040,General Medicine,H023,Hospital_23,Area_13,District_9,Government,182,148,18,2026-03-07,Evening,14:00,20:00,Emergency Duty,P00481,52,Female,Asthma,Medium,10:39,D040,79
+S0482,D010,Doctor_D010,Pediatrics,H019,Hospital_19,Area_21,District_3,Government,178,63,5,2026-03-01,Evening,14:00,20:00,Emergency Duty,P00482,41,Female,Asthma,Low,09:22,D010,81
+S0483,D111,Doctor_D111,Dermatology,H018,Hospital_18,Area_16,District_1,Private,230,162,30,2026-03-09,Evening,14:00,20:00,Available,P00483,87,Female,Fever,Medium,15:32,D111,57
+S0484,D028,Doctor_D028,General Medicine,H014,Hospital_14,Area_16,District_4,Rural Center,254,108,31,2026-03-09,Night,20:00,08:00,Leave,P00484,15,Female,Migraine,Medium,12:24,D028,144
+S0485,D072,Doctor_D072,ENT,H038,Hospital_38,Area_15,District_9,Rural Center,159,144,19,2026-03-02,Evening,14:00,20:00,Available,P00485,49,Female,Diabetes,Low,10:27,D072,124
+S0486,D061,Doctor_D061,Orthopedics,H025,Hospital_25,Area_7,District_9,Private,174,96,31,2026-03-07,Morning,08:00,14:00,Leave,P00486,22,Female,Diabetes,Low,13:21,D061,170
+S0487,D054,Doctor_D054,Emergency,H037,Hospital_37,Area_1,District_7,Government,59,189,15,2026-03-15,Night,20:00,08:00,Leave,P00487,86,Female,Migraine,Medium,09:02,D054,98
+S0488,D110,Doctor_D110,Pediatrics,H021,Hospital_21,Area_13,District_9,Private,293,152,27,2026-03-12,Evening,14:00,20:00,Available,P00488,42,Male,Skin Allergy,Critical,09:09,D110,132
+S0489,D085,Doctor_D085,Cardiology,H029,Hospital_29,Area_9,District_1,Rural Center,68,26,6,2026-03-09,Morning,08:00,14:00,Leave,P00489,63,Female,Diabetes,Medium,11:27,D085,144
+S0490,D021,Doctor_D021,Radiology,H023,Hospital_23,Area_13,District_9,Government,182,148,18,2026-03-21,Evening,14:00,20:00,Available,P00490,74,Male,Skin Allergy,Low,12:46,D021,42
+S0491,D098,Doctor_D098,Radiology,H004,Hospital_4,Area_20,District_1,Rural Center,164,73,19,2026-03-07,Morning,08:00,14:00,Available,P00491,1,Male,Heart Disease,Low,15:13,D098,170
+S0492,D085,Doctor_D085,Radiology,H018,Hospital_18,Area_16,District_1,Private,230,162,30,2026-03-21,Morning,08:00,14:00,Leave,P00492,54,Female,Heart Disease,Medium,17:56,D085,170
+S0493,D116,Doctor_D116,ENT,H016,Hospital_16,Area_3,District_8,Rural Center,180,32,15,2026-03-13,Evening,14:00,20:00,Emergency Duty,P00493,70,Male,Migraine,Critical,15:26,D116,127
+S0494,D100,Doctor_D100,Neurology,H017,Hospital_17,Area_17,District_7,Private,175,192,6,2026-03-21,Morning,08:00,14:00,Available,P00494,34,Male,Heart Disease,Low,13:40,D100,173
+S0495,D010,Doctor_D010,Dermatology,H014,Hospital_14,Area_16,District_4,Rural Center,254,108,31,2026-03-02,Morning,08:00,14:00,Available,P00495,54,Female,Ear Infection,Low,13:34,D010,115
+S0496,D141,Doctor_D141,Cardiology,H025,Hospital_25,Area_7,District_9,Private,174,96,31,2026-03-13,Night,20:00,08:00,Available,P00496,4,Male,Infection,Critical,14:51,D141,129
+S0497,D100,Doctor_D100,Neurology,H018,Hospital_18,Area_16,District_1,Private,230,162,30,2026-03-20,Evening,14:00,20:00,Available,P00497,73,Male,Pregnancy,Low,10:11,D100,42
+S0498,D061,Doctor_D061,General Medicine,H003,Hospital_3,Area_4,District_8,Government,278,104,32,2026-03-07,Night,20:00,08:00,Leave,P00498,72,Female,Diabetes,Medium,11:23,D061,167
+S0499,D110,Doctor_D110,Gynecology,H006,Hospital_6,Area_21,District_9,Government,290,102,18,2026-03-08,Night,20:00,08:00,Emergency Duty,P00499,49,Female,Ear Infection,Low,08:00,D110,139
+S0500,D083,Doctor_D083,Pediatrics,H015,Hospital_15,Area_22,District_3,Private,190,184,28,2026-03-14,Morning,08:00,14:00,Leave,P00500,17,Female,Ear Infection,Critical,16:45,D083,99
