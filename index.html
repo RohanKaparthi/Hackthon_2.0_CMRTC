@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura RHA | Intelligent Healthcare</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div id="alert-container" class="alert-container"></div>
+
+    <div id="incoming-call" class="incoming-call-overlay hidden">
+        <div class="call-box glow-red">
+            <div class="caller-avatar">🚨</div>
+            <h2 class="caller-name">EMERGENCY ALERT</h2>
+            <p class="caller-status">Aura AI Agent Calling...</p>
+            <p id="call-details" class="call-details">Shortage detected at facility.</p>
+            <div class="call-actions">
+                <button class="btn-decline" onclick="declineCall()">Decline ✕</button>
+                <button class="btn-premium btn-accept" onclick="acceptAndDispatch()">Accept & Dispatch</button>
+            </div>
+        </div>
+        <audio id="ringtone" loop><source src="https://assets.mixkit.co/active_storage/sfx/1000/1000-preview.mp3" type="audio/mpeg"></audio>
+    </div>
+
+    <section id="landing-screen" class="screen-section active-screen">
+        <div class="animated-gradient-bg"></div>
+        <div class="med-bg">
+            <div class="med-icon" style="left: 10%; animation-duration: 25s; font-size: 90px;">🩺</div>
+            <div class="med-icon" style="left: 30%; animation-duration: 18s; font-size: 110px;">🚑</div>
+            <div class="med-icon" style="left: 55%; animation-duration: 22s; font-size: 80px;">💉</div>
+            <div class="med-icon" style="left: 75%; animation-duration: 28s; font-size: 120px;">🏥</div>
+            <div class="med-icon" style="left: 85%; animation-duration: 20s; font-size: 70px;">💊</div>
+            <div class="med-icon" style="left: 40%; animation-duration: 24s; font-size: 90px;">🧬</div>
+        </div>
+        <div class="hero-container">
+            <div class="heartbeat-icon">💙</div>
+            <h1 class="hero-title">AURA <span class="text-blue">RHA</span></h1>
+            <p class="hero-subtitle">Intelligent Healthcare. Human Compassion.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; margin-top: 30px;">
+                <button class="btn-premium" onclick="showScreen('op-screen')" style="background: #0ea5e9;">OP Registration</button>
+                <button class="btn-premium" onclick="showScreen('login-screen')">Admin Login</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="op-screen" class="screen-section hidden">
+        <div class="animated-gradient-bg"></div>
+        <div class="orb orb-1" style="background: rgba(14, 165, 233, 0.2); width: 600px; height: 600px; top: -10%; left: -10%;"></div>
+        <div class="orb orb-2" style="background: rgba(139, 92, 246, 0.15); width: 500px; height: 500px; bottom: -10%; right: -10%;"></div>
+
+        <div class="login-box soft-shadow" style="width: 480px; padding: 40px; background: white; border-radius: 20px;">
+            <button onclick="showScreen('landing-screen')" class="back-btn" style="color: #0ea5e9; font-size: 1rem; display: flex; align-items: center; gap: 5px;">
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Back
+            </button>
+            
+            <h2 style="color: #0f172a; margin-top: 20px; margin-bottom: 30px; font-weight: 800; font-size: 1.8rem;">Public OP Portal</h2>
+            
+            <div style="display:flex; gap:15px; margin-bottom: 25px;">
+                <button id="btn-reg-op" class="btn-premium" style="flex:1; padding: 14px; font-size:1rem; background: #0ea5e9; border-radius: 50px;" onclick="setOPMode('regular')">Regular OP</button>
+                <button id="btn-sos-op" class="btn-premium" style="flex:1; padding: 14px; font-size:1rem; background: #ef4444; border-radius: 50px; box-shadow: none;" onclick="setOPMode('sos')">🚨 EMERGENCY</button>
+            </div>
+
+            <div id="regular-op-fields">
+                <input type="text" id="op-name" class="input-field" placeholder="Patient Full Name">
+                <input type="number" id="op-mobile" class="input-field" placeholder="Mobile Number">
+                <input type="text" id="op-disease" class="input-field" placeholder="Symptoms / Disease (e.g. Fever)">
+            </div>
+            
+            <select id="op-hospital" class="input-field"><option value="">Select Nearest Hospital...</option></select>
+            
+            <div style="display:flex; gap:15px; margin-top: 15px;">
+                <button id="btn-submit-op" class="btn-premium" style="flex:1.8; padding: 14px; font-size:1.1rem; background: #0ea5e9; border-radius: 50px;" onclick="submitOP()">Generate Ticket</button>
+                <button class="btn-premium" style="flex:1; background: #8b5cf6; padding: 14px; font-size:1rem; border-radius: 50px; display: flex; justify-content: center; align-items: center; gap: 5px;" onclick="openPatientBot()">🤖 Consult AI</button>
+            </div>
+        </div>
+
+        <div id="ticket-modal" class="ticket-modal hidden">
+            <div class="ticket soft-shadow">
+                <div class="ticket-header" id="t-header">
+                    <h3>AURA RHA E-TICKET</h3>
+                    <span id="t-id" class="badge">OP-00000</span>
+                </div>
+                <div class="ticket-body">
+                    <p><strong>Name:</strong> <span id="t-name">...</span></p>
+                    <p id="p-mobile-box"><strong>Mobile:</strong> <span id="t-mobile">...</span></p>
+                    <p><strong>Condition:</strong> <span id="t-disease">...</span></p>
+                    <hr style="border:0; border-top: 1px dashed #cbd5e1; margin: 15px 0;">
+                    <p><strong>Assigned Hospital:</strong> <span id="t-hosp" style="color: var(--primary-blue); font-weight:bold;">...</span></p>
+                    <p><strong>Department:</strong> <span id="t-dept">...</span></p>
+                    <p><strong>Doctor:</strong> Dr. <span id="t-doc">...</span></p>
+                    <p><strong>Slot Time:</strong> <span id="t-time">...</span></p>
+                    <div id="t-alert" class="transfer-alert hidden">⚠️ Routed to different facility due to specialist availability.</div>
+                    
+                    <div style="text-align: center; margin-top: 20px; background: #f8fafc; padding: 15px; border-radius: 12px; border: 1px solid #e2e8f0;">
+                        <p style="font-size: 0.85rem; color: #475569; margin-top: 0; margin-bottom: 10px; font-weight: bold;">Scan to talk to AI Doctor while waiting:</p>
+                        <div id="qrcode" style="display: flex; justify-content: center;"></div>
+                    </div>
+                </div>
+                <button class="btn-premium" style="width:100%; border-radius: 0 0 15px 15px;" onclick="closeTicket()">Print & Close</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="patient-bot-overlay" class="voice-overlay hidden">
+        <div class="voice-modal patient-ai-modal">
+            <div class="voice-header">
+                <h3>👨‍⚕️ Aura AI Doctor</h3>
+                <button onclick="closePatientBot()" style="background:none; border:none; font-size:1.5rem; cursor:pointer; color: #64748b;">✕</button>
+            </div>
+            <div style="margin-top: 15px; display:flex; justify-content: space-between; align-items: center;">
+                <select id="patient-lang" style="padding: 8px 12px; border-radius: 20px; font-weight:bold; border: 1px solid #cbd5e1; outline:none; background:white; color:#0f172a;">
+                    <option value="en-IN">🇺🇸 English</option>
+                    <option value="te-IN" selected>🇮🇳 Telugu</option>
+                    <option value="hi-IN">🇮🇳 Hindi</option>
+                </select>
+                <input type="file" id="report-upload" accept="image/*" style="display:none;" onchange="handleReportUpload(event)">
+                <button onclick="document.getElementById('report-upload').click()" class="btn-premium" style="padding: 8px 15px; font-size: 0.85rem; background: #64748b; box-shadow:none; border-radius:20px; display:flex; align-items:center; gap:5px;">📄 Upload Report</button>
+            </div>
+            
+            <div id="patient-chat-body" class="chat-body" style="flex: 1; overflow-y: auto; min-height: 300px; max-height: 400px; margin-top: 15px; border-radius: 10px; border: 1px solid #e2e8f0; padding: 15px; background: #f8fafc; text-align:left;">
+                <div class="patient-bot-msg">Namaste! Tell me your symptoms or upload a test report photo. I will help you.</div>
+            </div>
+            
+            <div class="chat-input-area" style="padding:0; margin-top: 15px; border:none; display:flex; gap:10px; background:none;">
+                <button id="patient-mic-btn" class="chat-fab" style="width:50px; height:50px; border-radius:50%; background:#10b981;" onclick="startPatientListening()">🎙️</button>
+                <input type="text" id="patient-text-input" class="input-field" style="margin:0; flex:1; border-radius: 50px;" placeholder="Type symptoms..." onkeypress="if(event.key === 'Enter') sendPatientText()">
+                <button class="chat-fab" style="width:50px; height:50px; border-radius:50%; background:#0ea5e9;" onclick="sendPatientText()">➔</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="login-screen" class="screen-section hidden">
+        <div class="animated-gradient-bg"></div>
+        <div class="login-box soft-shadow">
+            <button onclick="showScreen('landing-screen')" class="back-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right:5px;"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Back
+            </button>
+            <h2 style="color: #0f172a; margin-top: 10px;">Command Center Login</h2>
+            <input type="text" id="admin-user" class="input-field" placeholder="Username (Lokesh)">
+            <input type="password" id="admin-pass" class="input-field" placeholder="Password (cmr@123)">
+            <button class="btn-premium" style="width: 100%; margin-top: 15px; background: #0ea5e9;" onclick="verifyLogin()">Access Dashboard</button>
+        </div>
+    </section>
+
+    <div id="dashboard-layout" class="dashboard-layout hidden">
+        <aside class="sidebar soft-shadow">
+            <div class="sidebar-header">
+                <div class="logo">AURA<span class="text-blue">RHA</span></div>
+            </div>
+            <div class="sidebar-scrollable" style="flex: 1; padding: 10px 20px;">
+                <nav class="side-nav">
+                    <a href="#" class="nav-btn active" onclick="switchTab('network')"><span class="icon">🏥</span> Network Monitor</a>
+                    <a href="#" class="nav-btn" onclick="switchTab('ambulance')"><span class="icon">🚑</span> Fleet Dispatch</a>
+                    <a href="#" class="nav-btn" onclick="switchTab('inventory')"><span class="icon">📦</span> Smart Inventory</a>
+                </nav>
+                
+                <button class="btn-premium" onclick="runAIOptimizer()" style="width:100%; font-size: 1rem; padding: 12px; background: #10b981; margin-top:15px; box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);">⚡ Run Optimizer</button>
+
+                <div class="walk-in-box" style="background: rgba(241, 245, 249, 0.7); padding: 15px; border-radius: 12px; border: 1px solid #e2e8f0; margin-top: 30px;">
+                    <h3 style="color: #0f172a; margin-top: 0; font-size: 0.95rem;">🚨 Local Walk-In Alert</h3>
+                    <input type="text" id="wName" placeholder="Patient Name" class="input-field" style="padding: 10px; margin-bottom: 8px;">
+                    <select id="wHospital" class="input-field" style="padding: 10px; margin-bottom: 8px;"><option value="">Loading Hospitals...</option></select>
+                    <select id="wSpecialty" class="input-field" style="padding: 10px; margin-bottom: 8px;">
+                        <option value="Orthopedics">Doctor: Orthopedics</option>
+                        <option value="Neurology">Doctor: Neurology</option>
+                        <option value="General Medicine">Doctor: Gen. Medicine</option>
+                        <option value="ENT">Doctor: ENT</option>
+                        <option value="Cardiology">Doctor: Cardiology</option>
+                    </select>
+                    <select id="wEquip" class="input-field" style="padding: 10px; margin-bottom: 10px;">
+                        <option value="Ventilator">Equip: Ventilator</option>
+                        <option value="MRI">Equip: MRI Scanner</option>
+                        <option value="Defibrillator">Equip: Defibrillator</option>
+                        <option value="ECG_Machine">Equip: ECG Machine</option>
+                        <option value="X-Ray">Equip: X-Ray Machine</option>
+                        <option value="Ultrasound">Equip: Ultrasound</option>
+                        <option value="None">No Equipment Needed</option>
+                    </select>
+                    <button class="btn-premium" onclick="simulateWalkIn()" style="width:100%; font-size: 0.9rem; padding: 10px; background:#0ea5e9;">Trigger Alert</button>
+                </div>
+            </div>
+            <div class="sidebar-footer">
+                <button onclick="logoutAdmin()" style="width:100%; padding: 12px; background:#ef4444; color:white; border:none; border-radius:8px; cursor:pointer; font-weight:bold; font-size:1rem; box-shadow: 0 5px 15px rgba(239, 68, 68, 0.3);">Log Out</button>
+            </div>
+        </aside>
+        <main class="main-content">
+            <section id="view-network" class="view-section active-view">
+                <header class="top-header">
+                    <div><h2 class="page-title">Network Operations</h2></div>
+                    <div style="display: flex; gap: 15px; align-items: center;">
+                        <button class="btn-premium" onclick="downloadReport()" style="padding: 10px 20px; font-size: 0.9rem; background:#0ea5e9;">📥 Download Live Report</button>
+                        <div class="status-badge pulse-green">🟢 Agent Active</div>
+                    </div>
+                </header>
+                <div id="loading" class="hidden"><div class="spinner"></div><p style="color: #0ea5e9; font-weight: bold; margin-top:15px; text-align: center;">AI analyzing patient severity...</p></div>
+                <div id="dashboard-results" class="hidden">
+                    <h3 class="section-title">🚨 AI Triage Plan (Includes Live OPs)</h3>
+                    <div id="actionPlanGrid" class="cards-grid"></div>
+                    <h3 class="section-title" style="margin-top: 40px;">🏥 Live Hospital Resources</h3>
+                    <div id="networkStatusGrid" class="cards-grid"></div>
+                </div>
+            </section>
+            <section id="view-ambulance" class="view-section hidden-view">
+                <header class="top-header"><h2 class="page-title">Fleet & Resource Control</h2></header>
+                <div class="ambulance-stage">
+                    <div class="shortage-panel soft-shadow" style="width: 100%; max-width: 600px; margin: 0 auto 30px;">
+                        <h3 style="color: #ef4444; margin-top:0;">⚠️ Urgent Shortages Detected</h3>
+                        <div id="shortageList">Loading shortages...</div>
+                    </div>
+                    <div class="dispatch-panel soft-shadow" style="width: 100%; max-width: 500px; margin: 0 auto 30px;">
+                        <h3 style="color: #0f172a; margin-top:0;">Central Dispatcher</h3>
+                        <select id="dispatchHospital" class="input-field" style="margin-bottom: 10px;"><option value="">Select Target Facility...</option></select>
+                        <select id="dispatchResource" class="input-field" style="margin-bottom: 15px;">
+                            <optgroup label="Emergency Fleet">
+                                <option value="Ambulance">🚑 Dispatch Ambulance</option>
+                            </optgroup>
+                            <optgroup label="Medical Equipment">
+                                <option value="Ventilator">🛠 Send Ventilator</option>
+                                <option value="Defibrillator">⚡ Send Defibrillator</option>
+                                <option value="ECG_Machine">📈 Send ECG Machine</option>
+                                <option value="MRI">🧲 Send MRI Scanner</option>
+                                <option value="X-Ray">🦴 Send X-Ray</option>
+                                <option value="Ultrasound">🌊 Send Ultrasound</option>
+                            </optgroup>
+                            <optgroup label="Medical Specialists">
+                                <option value="Cardiology">👨‍⚕️ Send Cardiologist</option>
+                                <option value="Neurology">👨‍⚕️ Send Neurologist</option>
+                                <option value="Orthopedics">👨‍⚕️ Send Orthopedic</option>
+                                <option value="ENT">👨‍⚕️ Send ENT Specialist</option>
+                            </optgroup>
+                        </select>
+                        <button class="btn-premium" onclick="manualDispatch()" style="background: #0ea5e9;">Deploy Resource</button>
+                    </div>
+                    <div class="anim-container"><div class="road-line"></div><div id="amb-vehicle" class="ambulance-vehicle">🚑</div></div>
+                </div>
+            </section>
+            <section id="view-inventory" class="view-section hidden-view">
+                <header class="top-header"><h2 class="page-title">Global Inventory Analytics</h2></header>
+                <div class="inventory-grid">
+                    <div class="inv-card soft-shadow"><div class="inv-icon float-anim">💊</div><h3>Paracetamol</h3><div class="progress-bg"><div class="progress-fill fill-green" style="width: 85%;"></div></div><p style="text-align: right; font-weight: bold; color: #10b981;">85% Stock</p></div>
+                    <div class="inv-card soft-shadow" style="border: 2px solid #fee2e2;"><div class="inv-icon float-anim" style="animation-delay: 1s;">💉</div><h3>Remdesivir</h3><div class="progress-bg"><div class="progress-fill fill-red" style="width: 5%;"></div></div><p style="text-align: right; font-weight: bold; color: #ef4444;">CRITICAL: 5% Stock</p></div>
+                    <div class="inv-card soft-shadow"><div class="inv-icon float-anim" style="animation-delay: 2s;">🩸</div><h3>Blood Bank (O+)</h3><div class="progress-bg"><div class="progress-fill fill-yellow" style="width: 45%;"></div></div><p style="text-align: right; font-weight: bold; color: #f59e0b;">45% Stock</p></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="chatbot-widget" class="chatbot-widget" style="display:none;">
+        <div id="chat-window" class="chat-window hidden">
+            <div class="chat-header">
+                <div style="display:flex; align-items:center; gap:10px;"><span style="font-size: 1.5rem;">🤖</span><div><h4 style="margin:0; color:white; font-size:1rem;">Aura Text Agent</h4><span style="color:#6ee7b7; font-size:0.75rem;">🟢 Online</span></div></div>
+                <button onclick="toggleChat()" style="background:none; border:none; color:white; cursor:pointer; font-size:1.2rem;">✕</button>
+            </div>
+            <div id="chat-body" class="chat-body"><div class="bot-msg">Hello Admin! I am the Aura Central Intelligence. How can I assist with the hospital network today?</div></div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask Aura..." onkeypress="handleChatEnter(event)">
+                <button onclick="sendChatMessage()">➔</button>
+            </div>
+        </div>
+        <button id="voice-agent-btn" class="chat-fab pulse-green" style="background:#10b981; margin-bottom:15px;" onclick="openVoiceOverlay()"><span id="voice-icon">🎙️</span></button>
+        <button class="chat-fab pulse-blue" onclick="toggleChat()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></button>
+    </div>
+
+    <div id="voice-overlay" class="voice-overlay hidden">
+        <div class="voice-modal">
+            <div class="voice-header"><h3>🎙️ Aura Voice Assistant</h3><button onclick="closeVoiceOverlay()" style="background:none; border:none; font-size:1.5rem; cursor:pointer;">✕</button></div>
+            <div class="voice-lang-selector" style="margin-top: 15px;">
+                <label style="font-size: 0.9rem; font-weight: bold; color: #475569;">Speaking in: </label>
+                <select id="voice-lang" style="padding: 10px; border-radius: 8px;">
+                    <option value="en-IN">🇺🇸 English</option><option value="te-IN" selected>🇮🇳 Telugu</option><option value="hi-IN">🇮🇳 Hindi</option>
+                </select>
+            </div>
+            <div class="voice-visualizer"><div id="voice-orb" class="orb-idle">🎤</div></div>
+            <div class="voice-transcript"><p id="voice-user-text" class="voice-user" style="color:gray;">Ready to listen...</p><p id="voice-ai-text" class="voice-ai" style="font-weight:bold;"></p></div>
+            <button id="start-listen-btn" class="btn-premium" style="width: 100%; background: #10b981;" onclick="startAdminListening()">Start Listening</button>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

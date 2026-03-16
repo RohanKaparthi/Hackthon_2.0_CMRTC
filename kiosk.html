@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Aura Patient Kiosk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; background: #f0f9ff; display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+        .header { background: #0ea5e9; color: white; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); z-index: 10; }
+        .header h1 { margin: 0; font-size: 1.5rem; }
+        .header p { margin: 5px 0 0; font-size: 0.9rem; opacity: 0.9; }
+        .chat-container { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 15px; }
+        .bot-msg { background: white; color: #0f172a; padding: 15px 20px; border-radius: 20px 20px 20px 0; max-width: 85%; align-self: flex-start; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; font-size: 1.05rem; line-height: 1.5; }
+        .user-msg { background: #0ea5e9; color: white; padding: 15px 20px; border-radius: 20px 20px 0 20px; max-width: 85%; align-self: flex-end; box-shadow: 0 4px 10px rgba(14, 165, 233, 0.2); font-size: 1.05rem; line-height: 1.5; }
+        .controls { background: white; padding: 20px; border-top: 1px solid #e2e8f0; display: flex; flex-direction: column; gap: 15px; align-items: center; z-index: 10; }
+        .lang-select { width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #cbd5e1; font-family: inherit; font-size: 1rem; outline: none; text-align: center; font-weight: bold; color: #0f172a; background: #f8fafc; }
+        .mic-btn { width: 80px; height: 80px; border-radius: 50%; border: none; background: #10b981; color: white; font-size: 2.5rem; display: flex; justify-content: center; align-items: center; box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4); transition: 0.3s; cursor: pointer; }
+        .mic-btn.listening { background: #ef4444; box-shadow: 0 10px 25px rgba(239, 68, 68, 0.5); animation: pulse 1s infinite; }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Aura AI Doctor</h1>
+        <p>Doctor Unavailable. Please speak your symptoms.</p>
+    </div>
+    <div id="chat-box" class="chat-container">
+        <div class="bot-msg">Namaste! The doctor is currently unavailable. Please tap the microphone and tell me your health problem. I will assist you.</div>
+    </div>
+    <div class="controls">
+        <select id="kiosk-lang" class="lang-select">
+            <option value="te-IN" selected>🗣️ Speak in Telugu</option>
+            <option value="hi-IN">🗣️ Speak in Hindi</option>
+            <option value="en-IN">🗣️ Speak in English</option>
+        </select>
+        <button id="mic-btn" class="mic-btn" onclick="startKioskListening()">🎙️</button>
+        <p id="status-text" style="margin:0; color:#64748b; font-weight:600; font-size:0.9rem;">Tap to speak</p>
+    </div>
+
+    <script>
+        const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+        const rec = SR ? new SR() : null;
+        if (rec) { rec.continuous = false; rec.interimResults = false; }
+
+        function startKioskListening() {
+            if(!rec) { alert("Browser not supported. Please use Chrome."); return; }
+            rec.lang = document.getElementById('kiosk-lang').value;
+            const btn = document.getElementById('mic-btn');
+            const status = document.getElementById('status-text');
+            
+            btn.classList.add('listening');
+            status.innerText = "Listening... Speak now";
+            status.style.color = "#ef4444";
+            try { rec.start(); } catch(e) { console.error(e); }
+        }
+
+        if(rec) {
+            rec.onresult = async (e) => {
+                const text = e.results[0][0].transcript;
+                const btn = document.getElementById('mic-btn');
+                const status = document.getElementById('status-text');
+                
+                btn.classList.remove('listening');
+                status.innerText = "Processing...";
+                status.style.color = "#0ea5e9";
+                
+                const chatBox = document.getElementById('chat-box');
+                chatBox.innerHTML += `<div class="user-msg">${text}</div>`;
+                chatBox.scrollTop = chatBox.scrollHeight;
+                
+                const loadingId = "load-" + Date.now();
+                chatBox.innerHTML += `<div id="${loadingId}" class="bot-msg" style="color:#0ea5e9;">Aura is thinking...</div>`;
+                chatBox.scrollTop = chatBox.scrollHeight;
+
+                try {
+                    const lang = document.getElementById('kiosk-lang').value;
+                    const res = await fetch('/api/patient_consult', { 
+                        method: 'POST', headers: { 'Content-Type': 'application/json' }, 
+                        body: JSON.stringify({ message: text, voice: true, lang: lang, has_image: false }) 
+                    });
+                    const data = await res.json();
+                    
+                    document.getElementById(loadingId).remove();
+                    chatBox.innerHTML += `<div class="bot-msg">${data.reply.replace(/\n/g, '<br>')}</div>`;
+                    chatBox.scrollTop = chatBox.scrollHeight;
+
+                    if(data.audio) {
+                        const audio = new Audio("data:audio/wav;base64," + data.audio);
+                        audio.play();
+                    }
+                    status.innerText = "Tap to speak again";
+                    status.style.color = "#64748b";
+                } catch (error) {
+                    document.getElementById(loadingId).remove();
+                    chatBox.innerHTML += `<div class="bot-msg" style="color:#ef4444;">Connection failed.</div>`;
+                    status.innerText = "Error. Try again.";
+                }
+            };
+
+            rec.onerror = (e) => {
+                document.getElementById('mic-btn').classList.remove('listening');
+                document.getElementById('status-text').innerText = "Error: " + e.error;
+                document.getElementById('status-text').style.color = "#ef4444";
+            }
+        }
+    </script>
+</body>
+</html>
